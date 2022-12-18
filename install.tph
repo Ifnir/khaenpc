@@ -5,6 +5,8 @@ UNLESS ~CD_STATE_NOTVALID~
 
 // Audio
 
+COPY ~KhaeNPC/audio~ ~override~
+
 LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~KhaeNPC/audio/Khae~
