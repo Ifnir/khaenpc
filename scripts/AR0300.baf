@@ -1,0 +1,10 @@
+// Position 3109.2573
+
+IF
+    Global("K#KhaeSpawn","Global",0)
+THEN
+RESPONSE #100
+CreateCreature("K#KHAE",[3109.2573],0)
+SetGlobal("K#KhaeSpawn","Global",1)
+Continue()
+END

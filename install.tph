@@ -3,13 +3,23 @@
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~ 
 
+// Audio
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~KhaeNPC/Audio/Khae~
+    oggdec_path = ~KhaeNPC/Audio~
+    sox_path = ~KhaeNPC/Audio/Khae~
+END
+
 // CREATURES
 
-COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override~
+COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override/K#Khae~
 SAY NAME1 @2
 SAY NAME2 @2
 WRITE_ASCII 0x34 ~68920M~ #8
 WRITE_ASCII 0x3c ~68920L~ #8
+WRITE_ASCII 0x2cc ~K#Khae~ #8
 SAY BIO @3
 SAY MORALE @4
 SAY HAPPY @5
@@ -63,6 +73,11 @@ SAY REACT_TO_DIE_GENERAL @46
 //  ADD_JOURNAL @32
 //  USING ~KhaeNPC\Translations\%LANGUAGE%\SETUP.TRA~
 //END
+
+// Portraits
+
+COPY ~%MOD_FOLDER%/portraits/68920L.bmp~ ~override/68920L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 
 //ADD NEW ITEMS
 
