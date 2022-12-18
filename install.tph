@@ -7,14 +7,14 @@ UNLESS ~CD_STATE_NOTVALID~
 
 LAF HANDLE_AUDIO
   STR_VAR
-    audio_path = ~KhaeNPC/Audio/Khae~
-    oggdec_path = ~KhaeNPC/Audio~
-    sox_path = ~KhaeNPC/Audio/Khae~
+    audio_path = ~KhaeNPC/audio/Khae~
+    oggdec_path = ~KhaeNPC/audio~
+    sox_path = ~KhaeNPC/audio/Khae~
 END
 
 // CREATURES
 
-COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override/K#Khae~
+COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override/K#Khae.cre~
 SAY NAME1 @2
 SAY NAME2 @2
 WRITE_ASCII 0x34 ~68920M~ #8
@@ -79,12 +79,20 @@ SAY REACT_TO_DIE_GENERAL @46
 COPY ~%MOD_FOLDER%/portraits/68920L.bmp~ ~override/68920L.bmp~
 COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 
+// Dialogues
+
+COMPILE ~KhaeNPC/dialogues/K#Khae.d~
+
+// SCRIPTS
+
+EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
+
 //ADD NEW ITEMS
 
-ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
-  LOAD_TRA ~KhaeNPC/translations/english/items_ee.tra~
-  INCLUDE ~KhaeNPC/lib/items_ee.tph~
- END ELSE BEGIN
-  LOAD_TRA ~KhaeNPC/translations/english/items_bg2.tra~
-  INCLUDE ~KhaeNPC/lib/items_bg2.tph~
-END
+//ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+//  LOAD_TRA ~KhaeNPC/translations/english/items_ee.tra~
+//  INCLUDE ~KhaeNPC/lib/items_ee.tph~
+// END ELSE BEGIN
+//  LOAD_TRA ~KhaeNPC/translations/english/items_bg2.tra~
+//  INCLUDE ~KhaeNPC/lib/items_bg2.tph~
+//END

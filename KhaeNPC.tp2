@@ -4,44 +4,15 @@ VERSION ~v1.0~
 README ~KhaeNPC/readme.txt~
 
 // Translations
-AUTO_TRA ~AlabasterSands/translations/%s~
-
-ALWAYS
-  ACTION_DEFINE_ARRAY AGAlSannoconvert BEGIN items_ee END
-  ACTION_DEFINE_ARRAY AGAlSanreload BEGIN KhaeNPC setup items_bg2 END
-
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charsets = 1
-    STR_VAR
-      tra_path = EVAL ~%MOD_FOLDER%/translations~
-      noconvert_array = AGAlSannoconvert
-      reload_array = AGAlSanreload
-  END
-END
-
-ACTION_IF NOT VARIABLE_IS_SET bg2_chapter THEN BEGIN // check to make this happen only once per install
-ACTION_IF (GAME_IS ~eet~) BEGIN // Check for EET and change chapter variables if it is detected
-OUTER_SET bg2_chapter = 12
-END ELSE BEGIN
-  OUTER_SET bg2_chapter = 0
-END
-OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
-  OUTER_SET bg2_chapter = bg2_chapter + 1
-  OUTER_SPRINT name_source ~bg2_chapter_%i%~
-  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
-END
-
-END
-END
+AUTO_TRA ~KhaeNPC/translations/%s~
 
 LANGUAGE ~English~
          ~English~
-         ~KhaeNPC/translations/english/KhaeNPC.tra~
+         ~KhaeNPC/translations/english/K#KhaeNPC.tra~
 
 BEGIN @1001 /* Yes, but don't patch existing save games */
 DESIGNATED 0
-SUBCOMPONENT @1000 /* Alluvial Sands: the new area of Athkatla */
+SUBCOMPONENT @1000
 LABEL K#-KHAENPC-NOPATCH
 
 OUTER_SET include_saves = 0
@@ -50,8 +21,8 @@ INCLUDE ~%MOD_FOLDER%/install.tph~
 
 BEGIN @1002 /* Yes and patch existing save games */
 DESIGNATED 1
-SUBCOMPONENT @1000 /* Alluvial Sands: the new area of Athkatla */
-LABEL K#-KHAENPC-NOPATCH
+SUBCOMPONENT @1000
+LABEL K#-KHAENPC-PATCH
 
 OUTER_SET include_saves = 1
 LOAD_TRA ~KhaeNPC/translations/english/setup.tra~
