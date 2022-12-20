@@ -1,5 +1,5 @@
 IF
-    Global("K#DEBT","LOCALS",0)
+    Global("K#DEBT","GLOBAL",0)
 THEN
 	RESPONSE #100
 		CutSceneId(Player1)	
@@ -14,16 +14,18 @@ THEN
         DisplayStringHead("K#KHAE",@5001)
         Wait(4)
         PlaySound("ARM_01F")
-        CreateCreature("K#DEB1",[2807.2533],6)
+        CreateCreature("K#DEB1",[3094.2697],6)
         Wait(1)
         PlaySound("ARM_01F")
-        CreateCreature("K#DEB2",[2788.2621],6)
+        CreateCreature("K#DEB2",[2924.2621],6)
         Wait(1)
         PlaySound("ARM_01F")
-        CreateCreature("K#DEB3",[2806.2709],6)
+        CreateCreature("K#DEB3",[2962.2726],6)
         Wait(1)
         PlaySound("ARM_01F")
         CreateCreature("K#DEB4",[3218.2716],6)
         Wait(4)
         EndCutSceneMode()
+        SetGlobal("K#DEBT","GLOBAL",1)
+        ActionOverride("K#DEB1",StartDialogueNoSet(Player1))
 END

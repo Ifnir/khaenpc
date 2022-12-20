@@ -12,7 +12,7 @@ DO ~FadeToColor([30.0],0)
     StartCutScene("K#CUT01")~ EXIT
 
 CHAIN 
-IF~True()~ THEN K#DEB1 DEB1.01.01
+IF~Global("K#DEBT","GLOBAL",1)~ THEN K#DEB1 DEB1.01.01
 @1
 EXIT
 

@@ -1,5 +1,3 @@
-// Position 3109.2573
-
 IF
     Global("K#KhaeSpawn","Global",0)
 THEN
