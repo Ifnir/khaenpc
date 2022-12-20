@@ -1,0 +1,12 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)	
+		FadeFromColor([15.0],0)
+		Wait(2)
+		MultiPlayerSync()
+		EndCutSceneMode()
+		SetInterrupt(TRUE)
+		DisplayStringHead("K#KHAE",~Oh no, they are here!~)
+END
