@@ -1,3 +1,5 @@
 @1000    = ~Khae NPC~
 @1001    = ~Yes, but don't patch existing save games~
 @1002    = ~Yes and patch existing save games~
+
+@5001 = ~Oh no, they are here!~
