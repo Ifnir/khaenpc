@@ -2,7 +2,7 @@
 
 This mod will implement a new joinable character Khae. He can be found at the dock district nearby Mae'Var's Guildhall
 
-![alt text](https://github.com/Ifnir/KhaeNPC/blob/main/68920L.bmp?raw=true)
+![alt text](https://github.com/Ifnir/khaenpc/blob/main/portraits/68920L.bmp?raw=true)
 
 v1.0.0
 
