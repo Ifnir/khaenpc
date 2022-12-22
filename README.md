@@ -13,3 +13,7 @@ v1.0.0
 - Making Khae able to join the party
 - Script for removing Khae from the party.
 
+## What to improve:
+1. Voice
+2. Adding new dialogue and interaction.
+
