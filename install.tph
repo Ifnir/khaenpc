@@ -26,16 +26,19 @@ COPY ~KhaeNPC/creatures/K#DEB2.cre~ ~override/K#DEB2.cre~
 SAY NAME1 @200
 SAY NAME2 @200
 WRITE_ASCII 0x280 ~K#DEB2~
+WRITE_ASCII 0x2cc ~K#DEB2~ #8
 
 COPY ~KhaeNPC/creatures/K#DEB3.cre~ ~override/K#DEB3.cre~
 SAY NAME1 @200
 SAY NAME2 @200
 WRITE_ASCII 0x280 ~K#DEB3~
+WRITE_ASCII 0x2cc ~K#DEB3~ #8
 
 COPY ~KhaeNPC/creatures/K#DEB4.cre~ ~override/K#DEB4.cre~
 SAY NAME1 @200
 SAY NAME2 @200
 WRITE_ASCII 0x280 ~K#DEB4~
+WRITE_ASCII 0x2cc ~K#DEB4~ #8
 
 COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override/K#Khae.cre~
 SAY NAME1 @2
@@ -110,15 +113,16 @@ COMPILE ~KhaeNPC/dialogues/K#Khae.d~
 // SCRIPTS
 
 COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K#CUT01.baf~
+~KhaeNPC/scripts/K#CUT02.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 
 //ADD NEW ITEMS
 
-//ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
-//  LOAD_TRA ~KhaeNPC/translations/english/items_ee.tra~
-//  INCLUDE ~KhaeNPC/lib/items_ee.tph~
-// END ELSE BEGIN
-//  LOAD_TRA ~KhaeNPC/translations/english/items_bg2.tra~
-//  INCLUDE ~KhaeNPC/lib/items_bg2.tph~
-//END
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+  LOAD_TRA ~KhaeNPC/translations/english/ITEMS_EE.TRA~
+  INCLUDE ~KhaeNPC/lib/items_ee.tph~
+ END ELSE BEGIN
+  LOAD_TRA ~KhaeNPC/translations/english/ITEMS_BG2.TRA~
+  INCLUDE ~KhaeNPC/lib/items_bg2.tph~
+END

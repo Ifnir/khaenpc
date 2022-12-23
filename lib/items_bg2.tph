@@ -1,0 +1,12 @@
+COPY ~KhaeNPC/items/K#WEDR.itm~ ~override~
+SAY NAME1 @0
+SAY NAME2 @0
+SAY DESC ~This is a silver ring with a pearl with powerful protective magic..
+
+STATISTICS:
+
+Equipped Abilities
+- Saving Throws: +2
+- Magic Resistance: +15%
+
+Weight: 1~

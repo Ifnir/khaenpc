@@ -1,0 +1,23 @@
+IF
+    Global("K#DEBT","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)	
+        FadeFromColor([30.0],0)
+        Wait(2)
+        PlaySound("ACT_07")
+        ActionOverride("K#DEB1",DestroySelf())
+        Wait(1)
+        PlaySound("ACT_07")
+        ActionOverride("K#DEB2",DestroySelf())
+        Wait(1)
+        PlaySound("ACT_07")
+        ActionOverride("K#DEB3",DestroySelf())
+        Wait(1)
+        PlaySound("ACT_07")
+        ActionOverride("K#DEB4",DestroySelf())
+        Wait(2)
+        EndCutSceneMode()
+        SetGlobal("K#DEBT","GLOBAL",2)
+        ActionOverride("K#KHAE",StartDialogueNoSet(Player1)) // This work
+END
