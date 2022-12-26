@@ -126,3 +126,7 @@ ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
   LOAD_TRA ~KhaeNPC/translations/english/ITEMS_BG2.TRA~
   INCLUDE ~KhaeNPC/lib/items_bg2.tph~
 END
+
+// 2DA
+
+APPEND ~item_use.2da~ ~K#WEDR Khae 9382 3~
