@@ -182,6 +182,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
 ~KhaeNPC/scripts/K3GEN.baf~
 ~KhaeNPC/scripts/K3Khae.baf~
+~KhaeNPC/scripts/K3KhaeD.baf~
 ~KhaeNPC/scripts/K3Khae25.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
@@ -200,9 +201,24 @@ END
 APPEND ~item_use.2da~ ~K3WEDR Khae 9382 3~
 
 APPEND ~pdialog.2da~
-~K3Khae        K3KhaeP             K3Khae           K#KhaeD~
+~K3Khae K3KhaeP K3KhaeJ~
 UNLESS ~K3Khae~
 UNLESS ~25POST~
+
+APPEND ~pdialog.2da~
+~K3Khae K3KhaeP K3KhaeJ~
+UNLESS ~K3Khae~
+IF ~25POST~
+
+APPEND ~interdia.2da~
+~K3Khae K3KhaeB~
+UNLESS ~K3Khae~
+UNLESS ~25FILE~
+
+APPEND ~interdia.2da~
+~K3Khae K3KhaeB K3KhaeT25~
+UNLESS ~K3Khae~
+IF ~25FILE~
 
 ACTION_IF GAME_IS ~eet~ BEGIN
   OUTER_SET type_var = 2
