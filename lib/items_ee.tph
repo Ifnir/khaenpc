@@ -1,4 +1,4 @@
-COPY ~KhaeNPC/items/K#WEDR.itm~ ~override~
+COPY ~KhaeNPC/items/K3WEDR.itm~ ~override~
 SAY NAME1 @0
 SAY NAME2 @0
 SAY DESC ~This is a silver ring with a pearl with powerful protective magic..

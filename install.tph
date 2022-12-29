@@ -16,41 +16,40 @@ END
 
 // CREATURES
 
-COPY ~KhaeNPC/creatures/K#DEB1.cre~ ~override/K#DEB1.cre~
+COPY ~KhaeNPC/creatures/K3DEB1.cre~ ~override/K3DEB1.cre~
 SAY NAME1 @200
 SAY NAME2 @200
-WRITE_ASCII 0x280 ~K#DEB1~
-WRITE_ASCII 0x2cc ~K#DEB1~ #8
+WRITE_ASCII 0x280 ~K3DEB1~
+WRITE_ASCII 0x2cc ~K3DEB1~ #8
 
-COPY ~KhaeNPC/creatures/K#DEB2.cre~ ~override/K#DEB2.cre~
+COPY ~KhaeNPC/creatures/K3DEB2.cre~ ~override/K3DEB2.cre~
 SAY NAME1 @200
 SAY NAME2 @200
-WRITE_ASCII 0x280 ~K#DEB2~
-WRITE_ASCII 0x2cc ~K#DEB2~ #8
+WRITE_ASCII 0x280 ~K3DEB2~
+WRITE_ASCII 0x2cc ~K3DEB2~ #8
 
-COPY ~KhaeNPC/creatures/K#DEB3.cre~ ~override/K#DEB3.cre~
+COPY ~KhaeNPC/creatures/K3DEB3.cre~ ~override/K3DEB3.cre~
 SAY NAME1 @200
 SAY NAME2 @200
-WRITE_ASCII 0x280 ~K#DEB3~
-WRITE_ASCII 0x2cc ~K#DEB3~ #8
+WRITE_ASCII 0x280 ~K3DEB3~
+WRITE_ASCII 0x2cc ~K3DEB3~ #8
 
-COPY ~KhaeNPC/creatures/K#DEB4.cre~ ~override/K#DEB4.cre~
+COPY ~KhaeNPC/creatures/K3DEB4.cre~ ~override/K3DEB4.cre~
 SAY NAME1 @200
 SAY NAME2 @200
-WRITE_ASCII 0x280 ~K#DEB4~
-WRITE_ASCII 0x2cc ~K#DEB4~ #8
+WRITE_ASCII 0x280 ~K3DEB4~
+WRITE_ASCII 0x2cc ~K3DEB4~ #8
 
-COPY ~KhaeNPC/creatures/K#KHAE.cre~ ~override/K#Khae.cre~
+COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
 SAY NAME1 @2
 SAY NAME2 @2
 WRITE_ASCII 0x34 ~68920M~ #8
 WRITE_ASCII 0x3c ~68920L~ #8
-WRITE_ASCII 0x248 ~K#Khae~ // Override
-WRITE_ASCII 0x260 ~K#GEN~ #8 // General
+WRITE_ASCII 0x248 ~K3Khae~ // Override
+WRITE_ASCII 0x260 ~K3GEN~ #8 // General
 WRITE_ASCII 0x268 ~DPLAYER~ #8 // Default
-WRITE_ASCII 0x280 ~K#Khae~ #32 // Script name
-WRITE_ASCII 0x2cc ~K#Khae~ #8 // Dialogue
-WRITE_ASCII 0x270 ~NEUTRAL~ #8
+WRITE_ASCII 0x280 ~K3Khae~ #32 // Script name
+WRITE_ASCII 0x2cc ~K3Khae~ #8 // Dialogue
 SAY BIO @3
 SAY MORALE @4
 SAY HAPPY @5
@@ -98,17 +97,16 @@ SAY SELECT_RARE1 @44
 SAY SELECT_RARE2 @45
 SAY REACT_TO_DIE_GENERAL @46
 
-COPY ~KhaeNPC/creatures/K#KHAE25.cre~ ~override/K#Khae25.cre~
+COPY ~KhaeNPC/creatures/K3Khae25.cre~ ~override/K3Khae25.cre~
 SAY NAME1 @2
 SAY NAME2 @2
 WRITE_ASCII 0x34 ~68920M~ #8
 WRITE_ASCII 0x3c ~68920L~ #8
-WRITE_ASCII 0x248 ~K#Khae~ // Override
-WRITE_ASCII 0x260 ~K#GEN~ #8 // General
+WRITE_ASCII 0x248 ~K3Khae~ // Override
+WRITE_ASCII 0x260 ~K3GEN~ #8 // General
 WRITE_ASCII 0x268 ~DPLAYER~ #8 // Default
-WRITE_ASCII 0x280 ~K#Khae~ #32
-WRITE_ASCII 0x2cc ~K#Khae25~ #8
-WRITE_ASCII 0x270 ~NEUTRAL~ #8
+WRITE_ASCII 0x280 ~K3Khae~ #32
+WRITE_ASCII 0x2cc ~K3Khae25~ #8
 SAY BIO @3
 SAY MORALE @4
 SAY HAPPY @5
@@ -157,8 +155,8 @@ SAY SELECT_RARE2 @45
 SAY REACT_TO_DIE_GENERAL @46
 
 APPEND ~pdialog.2da~
-~K#Khae        K#KhaeP             K#Khae~
-UNLESS ~K#Khae~
+~K3Khae        K3KhaeP             K3Khae~
+UNLESS ~K3Khae~
 UNLESS ~25POST~
 
 //JOURNALS 
@@ -174,17 +172,17 @@ COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 
 // Dialogues
 
-COMPILE ~KhaeNPC/dialogues/K#Khae.d~
-COMPILE ~KhaeNPC/dialogues/K#KhaeP.d~
-COMPILE ~KhaeNPC/dialogues/K#Khae25.d~
+COMPILE ~KhaeNPC/dialogues/K3Khae.d~
+COMPILE ~KhaeNPC/dialogues/K3KhaeP.d~
+COMPILE ~KhaeNPC/dialogues/K3Khae25.d~
 
 // SCRIPTS
 
-COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K#CUT01.baf~
-~KhaeNPC/scripts/K#CUT02.baf~
-~KhaeNPC/scripts/K#GEN.baf~
-~KhaeNPC/scripts/K#KHAE.baf~
-~KhaeNPC/scripts/K#KHAE25.baf~
+COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
+~KhaeNPC/scripts/K3CUT02.baf~
+~KhaeNPC/scripts/K3GEN.baf~
+~KhaeNPC/scripts/K3Khae.baf~
+~KhaeNPC/scripts/K3Khae25.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 
@@ -199,21 +197,22 @@ ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
 END
 
 // 2DA
-
-//APPEND ~item_use.2da~ ~K#WEDR Khae 9382 3~
+APPEND ~item_use.2da~ ~K3WEDR Khae 9382 3~
 
 ACTION_IF GAME_IS ~eet~ BEGIN
   OUTER_SET type_var = 2
 // Transition
 LAF ~EET_NPC_TRANSITION~
     INT_VAR
+      default_ToB = 1 //NPC available as summonable NPC when the game is started in ToB (= new ToB game)
+      clean_ToB = 1
       type = type_var
     STR_VAR
-      dv = "K#Khae"
-      override_SoA = "K#KHAE"
-      override_ToB = "K#KHAE25"
-      dialog_ToB = "K#KHAE25"
-      cre_ToB = "K#KHAE25"
+      dv = "K3Khae"
+      override_SoA = "K3Khae"
+      override_ToB = "K3Khae25"
+      dialog_ToB = "K3Khae25"
+      cre_ToB = "K3Khae25"
       traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/FATESP.TRA"
       string = "@0"
       stringPosDV = "Skie"

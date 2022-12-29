@@ -1,11 +1,11 @@
-BEGIN K#KhaeP
+BEGIN K3KhaeP
 
 IF ~Global("O#KhaeKickedOut","GLOBAL",0) HappinessLT(Myself,-299)~ b1
 SAY ~Okay then..~
 IF ~~ DO ~EscapeArea()~ EXIT
 END
 
-IF ~Global("K#KhaeKickedOut","GLOBAL",0)~ b2
+IF ~Global("K3KhaeKickedOut","GLOBAL",0)~ b2
 SAY ~We have fought well and we have fought bravely. Tempus willing, perhaps I will fight at your side again someday.~
 ++ ~My mistake. Please, don't leave.~ DO ~JoinParty()~ EXIT
 + ~!AreaCheck("AR0603")
@@ -26,7 +26,7 @@ SAY ~We have fought well and we have fought bravely. Tempus willing, perhaps I w
 !AreaCheck("AR1505")
 !AreaCheck("AR1506")
 !AreaCheck("AR1507")
-!AreaCheck("AR1508")~ + ~Of course. Wait for me in the Bridge District.~ DO ~SetGlobal("K#KhaeKickedOut","GLOBAL",1) MoveGlobal("AR0500","K#Khae",[4053.255])~ EXIT 
+!AreaCheck("AR1508")~ + ~Of course. Wait for me in the Bridge District.~ DO ~SetGlobal("K3KhaeKickedOut","GLOBAL",1) MoveGlobal("AR0500","K3Khae",[4053.255])~ EXIT 
 + ~!AreaCheck("AR0301")
 !AreaCheck("AR0302")
 !AreaCheck("AR0303")
@@ -40,12 +40,12 @@ SAY ~We have fought well and we have fought bravely. Tempus willing, perhaps I w
 !AreaCheck("AR1102")
 !AreaCheck("AR1107")
 !AreaCheck("AR0801")
-!AreaCheck("AR0803")~ + ~Just wait for me here.~ DO ~SetGlobal("K#KhaeKickedOut","GLOBAL",1)~ EXIT
+!AreaCheck("AR0803")~ + ~Just wait for me here.~ DO ~SetGlobal("K3KhaeKickedOut","GLOBAL",1)~ EXIT
 END
 
 // If you have kicked Branwen out and told her to wait right here or in the Bridge District, here's the dialogue she is going to have(remember, O#BranKickedOut is at 1).
 
-IF ~Global("K#KhaeKickedOut","GLOBAL",1)~ b3
+IF ~Global("K3KhaeKickedOut","GLOBAL",1)~ b3
 SAY ~By Tempus, you have returned! Are we to join again and fight as mighty warriors should? Say it is so!~
 ++ ~I have. Please, join me.~ + b3.1
 ++ ~Not at the moment.~ + b3.2
@@ -53,7 +53,7 @@ END
 
 IF ~~ b3.1
 SAY ~A triumphant day, indeed! I welcome your company once again!~
-IF ~~ DO ~SetGlobal("K#KhaeKickedOut","GLOBAL",0) JoinParty()~ EXIT
+IF ~~ DO ~SetGlobal("K3KhaeKickedOut","GLOBAL",0) JoinParty()~ EXIT
 END
 
 IF ~~ b3.2

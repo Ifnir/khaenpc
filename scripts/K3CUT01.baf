@@ -1,0 +1,31 @@
+IF
+    Global("K3DEBT","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)	
+        FadeFromColor([30.0],0)
+        Wait(3)
+        ActionOverride("K3KHAE",Face(13))
+        Wait(1)
+	    ActionOverride("K3KHAE",Face(5))
+        Wait(1)
+	    ActionOverride("K3KHAE",Face(13))
+        Wait(2)
+        DisplayStringHead("K3KHAE",@5001)
+        Wait(4)
+        PlaySound("ACT_07")
+        CreateCreature("K3DEB1",[3094.2697],6)
+        Wait(1)
+        PlaySound("ACT_07")
+        CreateCreature("K3DEB2",[2924.2621],6)
+        Wait(1)
+        PlaySound("ACT_07")
+        CreateCreature("K3DEB3",[2962.2726],6)
+        Wait(1)
+        PlaySound("ACT_07")
+        CreateCreature("K3DEB4",[3218.2716],6)
+        Wait(4)
+        EndCutSceneMode()
+        SetGlobal("K3DEBT","GLOBAL",1)
+        ActionOverride("K3KHAE",StartDialogueNoSet(Player1)) // This work
+END

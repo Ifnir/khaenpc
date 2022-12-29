@@ -8,12 +8,12 @@ AUTO_TRA ~KhaeNPC/translations/%s~
 
 LANGUAGE ~English~
          ~English~
-         ~KhaeNPC/translations/english/K#KhaeNPC.tra~
+         ~KhaeNPC/translations/english/K3KhaeNPC.tra~
 
 BEGIN @1001 /* Yes, but don't patch existing save games */
 DESIGNATED 0
 SUBCOMPONENT @1000
-LABEL K#-KHAENPC-NOPATCH
+LABEL K3-KHAENPC-NOPATCH
 
 OUTER_SET include_saves = 0
 LOAD_TRA ~KhaeNPC/translations/english/setup.tra~
@@ -22,7 +22,7 @@ INCLUDE ~%MOD_FOLDER%/install.tph~
 BEGIN @1002 /* Yes and patch existing save games */
 DESIGNATED 1
 SUBCOMPONENT @1000
-LABEL K#-KHAENPC-PATCH
+LABEL K3-KHAENPC-PATCH
 
 OUTER_SET include_saves = 1
 LOAD_TRA ~KhaeNPC/translations/english/setup.tra~
