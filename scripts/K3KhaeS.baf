@@ -1,4 +1,11 @@
-// Override
+IF
+HotKey(K)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+StartCutScene("K3KhaeF")
+END
+
 IF
 	Global("BD_JOINXP","LOCALS",0)
 	InParty(Myself)
