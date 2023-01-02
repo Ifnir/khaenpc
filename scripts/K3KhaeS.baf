@@ -94,3 +94,14 @@ THEN
 		SetGlobal("BD_JOINXP","LOCALS",1)
 		SetInterrupt(TRUE)
 END
+
+// Need a something, because character appear busy
+IF
+	See(Player1)
+	!AreaCheck("AR0300")
+	InParty(Myself)
+	Global("K3DEBT","Global",2)
+THEN 
+RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
