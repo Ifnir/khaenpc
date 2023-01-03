@@ -103,10 +103,6 @@ IF
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	See(Player1)
 	!AreaCheck("AR0300")
-	//AreaCheck("AR0020")
-	//AreaCheck("AR0400")
-	//AreaCheck("AR0500")
-	//AreaCheck("AR0700")
 THEN 
 RESPONSE #100
     StartDialogueNoSet(Player1) 
