@@ -1,9 +1,9 @@
 IF
-HotKey(K)
+	HotKey(K)
 THEN
 RESPONSE #100
-StartCutSceneMode()
-StartCutScene("K3KhaeF")
+	StartCutSceneMode()
+	StartCutScene("K3KhaeF")
 END
 
 IF
@@ -97,11 +97,17 @@ END
 
 // Need a something, because character appear busy
 IF
+	InParty(Myself)
+	Global("K3DEBT","GLOBAL",2)
+	!StateCheck(Player1,CD_STATE_NOTVALID) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	See(Player1)
 	!AreaCheck("AR0300")
-	InParty(Myself)
-	Global("K3DEBT","Global",2)
+	//AreaCheck("AR0020")
+	//AreaCheck("AR0400")
+	//AreaCheck("AR0500")
+	//AreaCheck("AR0700")
 THEN 
 RESPONSE #100
-    StartDialogueNoSet(Player1)
+    StartDialogueNoSet(Player1) 
 END

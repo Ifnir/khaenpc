@@ -99,6 +99,7 @@ WRITE_ASCII 0x2cc ~K3Khae~ #8 // Dialogue
 
 
 COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
+~KhaeNPC/dialogues/K3KhaeJ.d~
 ~KhaeNPC/dialogues/K3KhaeB.d~ // Banter
 ~KhaeNPC/dialogues/K3KhaeP.d~ // Leave Party
 ~KhaeNPC/scripts/K3KhaeF.baf~ // Fix scripts
