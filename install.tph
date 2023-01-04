@@ -14,6 +14,11 @@ LAF HANDLE_AUDIO
     sox_path = ~KhaeNPC/audio/Khae~
 END
 
+// Journal
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  ADD_JOURNAL @0 @1 USING ~KhaeNPC\translations\%LANGUAGE%\JournalEntries.TRA~
+END
+
 // CREATURES
 
 COPY ~KhaeNPC/creatures/K3DEB1.cre~ ~override/K3DEB1.cre~
@@ -202,6 +207,7 @@ COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 
 COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
+~KhaeNPC/scripts/K3CUT03.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 
@@ -241,3 +247,18 @@ LAF ~EET_NPC_TRANSITION~
 END ELSE BEGIN
   COMPILE ~%MOD_FOLDER%/dialogues/FATESP.d~ USING ~%MOD_FOLDER%/translations/%LANGUAGE%/FATESP.TRA~
 END	  
+
+/* next comes the definition of the journal numbers so EET's continuous journal system works, too */
+
+ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12 // EET uses continuous chapter numbering from BG1 through TOB and this starts at "12" in BGII
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0 // all other game types (BGII(:EE), BGT) restart chapter numbering in SOA
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+END

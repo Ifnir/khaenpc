@@ -39,3 +39,6 @@
 @38 = ~I can't believe you lied to me like this. I'm disappointed in your actions, but I'll still help you deal with your problem. But you have to promise me that you'll seek help for your gambling problem and make things right with these people. Do you understand?~ // Khae 2.9
 @39 = ~Yes, <CHARNAME>. I understand. And I promise to make things right. Thank you for your forgiveness and for helping me.~ // Khae 2.10
 
+// If you decide go against Khae @12
+@100 = ~I don't trust any of you, and can be bothered to care.~
+@101 = ~I'm sad to hear that, I guess, I've to deal with this by myself.~
