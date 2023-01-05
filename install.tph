@@ -210,6 +210,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
+EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
 
 //ADD NEW ITEMS
 
@@ -223,8 +224,6 @@ END
 
 // 2DA
 APPEND ~item_use.2da~ ~K3WEDR Khae 9382 3~
-
-
 
 ACTION_IF GAME_IS ~eet~ BEGIN
   OUTER_SET type_var = 2

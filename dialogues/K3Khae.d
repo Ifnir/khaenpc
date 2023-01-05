@@ -15,7 +15,7 @@ DO ~FadeToColor([30.0],0)
     StartCutScene("K3CUT01")~ EXIT
 
 CHAIN 
-IF~Global("K3DEBT","GLOBAL",1)~ THEN K3KHAE DEB1.01.01
+IF~Global("K3DEBT","GLOBAL",1) !AreaCheck("AR0021")~ THEN K3KHAE DEB1.01.01
 @1 
 END 
 IF~~ THEN REPLY @2 EXTERN K3KHAE DEB1.01.02
@@ -46,7 +46,7 @@ DO ~FadeToColor([30.0],0)
     StartCutSceneMode()
     StartCutScene("K3CUT02")~ EXIT //EXTERN K3KHAE DEB1.01.06
 
-CHAIN IF~Global("K3DEBT","GLOBAL",2)~ THEN K3KHAE DEB1.01.06
+CHAIN IF~!AreaCheck("AR0021") Global("K3DEBT","GLOBAL",2) ~ THEN K3KHAE DEB1.01.06
 @16
 END
 IF~~ THEN REPLY @17 EXTERN K3KHAE DEB1.01.07
@@ -112,3 +112,10 @@ DO ~FadeToColor([30.0],0)
     Wait(1)
     StartCutSceneMode()
     StartCutScene("K3CUT03")~ EXIT
+
+CHAIN IF~Global("K3HIDE","Global",2)
+AreaCheck("AR0021")~
+THEN K3KHAE KHAE.HIDE1
+@102
+END
+IF~~ THEN REPLY @103 EXIT

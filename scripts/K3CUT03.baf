@@ -5,7 +5,7 @@ THEN
 		CutSceneId(Player1)	
         FadeFromColor([30.0],0)
         Wait(2)
-        isplayStringHead("K3DEB1",@5002)
+        DisplayStringHead("K3DEB1",@5002)
         ActionOverride("K3KHAE",ForceSpell(Myself,DRYAD_TELEPORT))
         Wait(8)
         PlaySound("ACT_07")

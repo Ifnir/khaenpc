@@ -1,0 +1,9 @@
+IF
+    Global("K3HIDE","Global",1)
+    Global("K3DEBT","GLOBAL",1)
+THEN
+RESPONSE #100
+    CreateCreature("K3KHAE",[494.371],0)
+    SetGlobal("K3HIDE","Global",2)
+    Continue()
+END

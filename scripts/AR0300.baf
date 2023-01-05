@@ -2,7 +2,7 @@ IF
     Global("K3KhaeSpawn","Global",0)
 THEN
 RESPONSE #100
-CreateCreature("K3KHAE",[3109.2573],0)
-SetGlobal("K3KhaeSpawn","Global",1)
-Continue()
+    CreateCreature("K3KHAE",[3109.2573],0)
+    SetGlobal("K3KhaeSpawn","Global",1)
+    Continue()
 END
