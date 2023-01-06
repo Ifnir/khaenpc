@@ -1,8 +1,19 @@
 IF
     Global("K3KhaeSpawn","Global",0)
 THEN
-RESPONSE #100
-    CreateCreature("K3KHAE",[3109.2573],0)
-    SetGlobal("K3KhaeSpawn","Global",1)
-    Continue()
+    RESPONSE #100
+        CreateCreature("K3KHAE",[3109.2573],0)
+        SetGlobal("K3KhaeSpawn","Global",1)
+        Continue()
+END
+
+IF
+    Global("K3DEBT","GLOBAL",1)
+    Dead("K3DEB1")
+    Dead("K3DEB2")
+    Dead("K3DEB3")
+THEN
+    RESPONSE #100
+        SetGlobal("K3DEBT","GLOBAL",2)
+        ActionOverride("K3KHAE",StartDialogueNoSet(Player1))
 END

@@ -95,7 +95,6 @@ THEN
 		SetInterrupt(TRUE)
 END
 
-// Need a something, because character appear busy
 IF
 	InParty(Myself)
 	Global("K3DEBT","GLOBAL",2)
@@ -107,3 +106,28 @@ THEN
 RESPONSE #100
     StartDialogueNoSet(Player1) 
 END
+
+IF
+	!InParty(Myself)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),30)
+	HaveSpell(WIZARD_GREATER_MALISON)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+END
+
+IF
+	!InParty(Myself)
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),30)
+	HaveSpell(WIZARD_HOLD_PERSON)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+END
+
+
+

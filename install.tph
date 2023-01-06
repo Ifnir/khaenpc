@@ -39,12 +39,6 @@ SAY NAME2 @200
 WRITE_ASCII 0x280 ~K3DEB3~
 WRITE_ASCII 0x2cc ~K3DEB3~ #8
 
-COPY ~KhaeNPC/creatures/K3DEB4.cre~ ~override/K3DEB4.cre~
-SAY NAME1 @200
-SAY NAME2 @200
-WRITE_ASCII 0x280 ~K3DEB4~
-WRITE_ASCII 0x2cc ~K3DEB4~ #8
-
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
