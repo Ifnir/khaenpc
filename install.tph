@@ -39,6 +39,9 @@ SAY NAME2 @200
 WRITE_ASCII 0x280 ~K3DEB3~
 WRITE_ASCII 0x2cc ~K3DEB3~ #8
 
+// AR0500 at 3963.1920 - Going to sewers, create map note
+// Use AR5013
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
@@ -186,7 +189,17 @@ APPEND ~interdia.2da~
 UNLESS ~K3Khae~
 IF ~25FILE~
 
-//JOURNALS 
+// AREA
+
+COPY ~KhaeNPC/areas~ ~override~
+
+COPY_EXISTING ~K3AR01.are~ ~override~
+      WRITE_ASCII 0x94 ~K3AR01~ #8 
+
+COPY_EXISTING ~AR0500.are~ ~override~
+      WRITE_ASCII 0x94 ~AR0500~ #8 
+
+// JOURNALS 
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   LOAD_TRA ~KhaeNPC\Translations\%LANGUAGE%\SETUP.TRA~
@@ -202,10 +215,11 @@ COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
+~KhaeNPC/scripts/K3AR01.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
-
+EXTEND_TOP ~AR0500.bcs~     ~KhaeNPC/scripts/AR0500.baf~
 //ADD NEW ITEMS
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN

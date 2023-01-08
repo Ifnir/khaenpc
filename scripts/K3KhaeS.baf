@@ -109,25 +109,30 @@ END
 
 IF
 	!InParty(Myself)
-	See(NearestEnemyOf(Myself))
-	Range(NearestEnemyOf(Myself),30)
-	HaveSpell(WIZARD_GREATER_MALISON)
-	Allegiance(Myself,ENEMY)
+	See("K3DEB1")
+	Range("K3DEB1",30)
+	HaveSpell(WIZARD_CHROMATIC_ORB)
 THEN
 	RESPONSE #100
-		Spell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+		Spell("K3DEB1",WIZARD_CHROMATIC_ORB)
 END
 
 IF
 	!InParty(Myself)
-	Allegiance(Myself,ENEMY)
-	See(NearestEnemyOf(Myself))
-	Range(NearestEnemyOf(Myself),30)
-	HaveSpell(WIZARD_HOLD_PERSON)
+	See("K3DEB2")
+	Range("K3DEB2",30)
+	HaveSpell(WIZARD_MELF_ACID_ARROW)
 THEN
 	RESPONSE #100
-		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+		Spell("K3DEB2",WIZARD_MELF_ACID_ARROW)
 END
 
-
-
+IF
+	!InParty(Myself)
+	See("K3DEB3")
+	Range("K3DEB3",30)
+	HaveSpell(WIZARD_MELF_ACID_ARROW)
+THEN
+	RESPONSE #100
+		Spell("K3DEB3",WIZARD_MELF_ACID_ARROW)
+END
