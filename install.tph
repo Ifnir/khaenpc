@@ -196,7 +196,7 @@ COPY_EXISTING ~K3AR01.are~ ~override/K3AR01.are~
 // 4074.1968
 //til 63,30
 //Search Square 253,162
-COPY_EXISTING ~AR0500.are~ ~override/AR0500.are~
+COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
       WRITE_ASCII 0x94 ~AR0500~ #8 
 
 // JOURNALS 
