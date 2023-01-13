@@ -226,6 +226,8 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
 ~KhaeNPC/scripts/K3AR01.baf~
 ~KhaeNPC/scripts/K3AR02.baf~
+~KhaeNPC/scripts/K3AR03.baf~
+~KhaeNPC/scripts/K3AR04.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
