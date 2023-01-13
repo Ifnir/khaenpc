@@ -196,6 +196,12 @@ COPY_EXISTING ~K3AR01.are~ ~override/K3AR01.are~
 COPY_EXISTING ~K3AR02.are~ ~override/K3AR02.are~
       WRITE_ASCII 0x94 ~K3AR02~ #8 
 
+COPY_EXISTING ~K3AR03.are~ ~override/K3AR03.are~
+      WRITE_ASCII 0x94 ~K3AR03~ #8
+
+COPY_EXISTING ~K3AR04.are~ ~override/K3AR04.are~
+      WRITE_ASCII 0x94 ~K3AR04~ #8  
+
 // 4074.1968
 //til 63,30
 //Search Square 253,162
