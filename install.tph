@@ -193,6 +193,9 @@ COPY ~KhaeNPC/areas~ ~override~
 COPY_EXISTING ~K3AR01.are~ ~override/K3AR01.are~
       WRITE_ASCII 0x94 ~K3AR01~ #8 
 
+COPY_EXISTING ~K3AR02.are~ ~override/K3AR02.are~
+      WRITE_ASCII 0x94 ~K3AR02~ #8 
+
 // 4074.1968
 //til 63,30
 //Search Square 253,162
@@ -216,6 +219,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
 ~KhaeNPC/scripts/K3AR01.baf~
+~KhaeNPC/scripts/K3AR02.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
