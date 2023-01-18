@@ -39,6 +39,30 @@ SAY NAME2 @200
 WRITE_ASCII 0x280 ~K3DEB3~
 WRITE_ASCII 0x2cc ~K3DEB3~ #8
 
+COPY ~KhaeNPC/creatures/K3GU01.cre~ ~override/K3GU01.cre~
+SAY NAME1 @201
+SAY NAME2 @201
+WRITE_ASCII 0x280 ~K3GU01~
+WRITE_ASCII 0x2cc ~K3GU01~ #8
+
+COPY ~KhaeNPC/creatures/K3EBRI.cre~ ~override/K3EBRI.cre~
+SAY NAME1 @202
+SAY NAME2 @202
+WRITE_ASCII 0x280 ~K3EBRI~
+WRITE_ASCII 0x2cc ~K3EBRI~ #8
+
+COPY ~KhaeNPC/creatures/K3BROR.cre~ ~override/K3BROR.cre~
+SAY NAME1 @203
+SAY NAME2 @203
+WRITE_ASCII 0x280 ~K3BROR~
+WRITE_ASCII 0x2cc ~K3BROR~ #8
+
+COPY ~KhaeNPC/creatures/K3ZHAL.cre~ ~override/K3ZHAL.cre~
+SAY NAME1 @204
+SAY NAME2 @204
+WRITE_ASCII 0x280 ~K3ZHAL~
+WRITE_ASCII 0x2cc ~K3ZHAL~ #8
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
@@ -104,7 +128,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/scripts/K3KhaeF.baf~ // Fix scripts
 ~KhaeNPC/scripts/K3KhaeS.baf~ // Main Script
 // ~KhaeNPC/scripts/K3KhaeD.baf~ // Dream script if needed
-
+~KhaeNPC/dialogues/K3gu01.d~ // Guard Dialogue
+~KhaeNPC/dialogues/K3ebri.d~ 
 
 // Tob
 

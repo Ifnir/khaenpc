@@ -1,0 +1,11 @@
+IF
+    Global("K3BROR","K3AR02",0)
+THEN
+RESPONSE #100
+    CreateCreature("K3GU01",[744.283],0)
+    CreateCreature("K3GU01",[659.464],0)
+    CreateCreature("K3GU01",[519.457],0)
+    CreateCreature("K3BROR",[580.477],0)
+    SetGlobal("K3BROR","K3AR02",1)
+    Continue()
+END

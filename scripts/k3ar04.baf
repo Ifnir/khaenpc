@@ -1,0 +1,7 @@
+IF
+    Global("K3HALL","K3AR04",0)
+THEN
+RESPONSE #100
+    SetGlobal("K3HALL","K3AR04",1)
+    Continue()
+END

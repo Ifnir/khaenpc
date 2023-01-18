@@ -1,0 +1,8 @@
+IF
+    Global("K3PRISON","K3AR03",0)
+THEN
+RESPONSE #100
+    CreateCreature("K3ZHAL",[1378.364],0)
+    SetGlobal("K3PRISON","K3AR03",1)
+    Continue()
+END
