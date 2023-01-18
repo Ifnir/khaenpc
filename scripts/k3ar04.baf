@@ -2,6 +2,17 @@ IF
     Global("K3HALL","K3AR04",0)
 THEN
 RESPONSE #100
+    CreateCreature("K3GU01",[1282.1369],0)
+    CreateCreature("K3GU01",[436.998],0)
+    CreateCreature("K3GU01",[1478.692],0)
+    CreateCreature("K3DEB1",[1580.455],0)
+    CreateCreature("K3DEB2",[1137.891],0)
+    CreateCreature("K3DEB3",[1265.790],0)
+    CreateCreature("K3DEB1",[1311.1018],0)
+    CreateCreature("K3DEB2",[2455.1124],0)
+    CreateCreature("K3ULA",[1866.732],0)
+    CreateCreature("K3GERV",[622.1823],0)
+    CreateCreature("K3XAV",[743.1793],0)
     SetGlobal("K3HALL","K3AR04",1)
     Continue()
 END

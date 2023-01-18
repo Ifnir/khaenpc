@@ -1,0 +1,8 @@
+IF
+    Global("K3VERD","K3AR05",0)
+THEN
+RESPONSE #100
+    CreateCreature("K3VERD",[316.340],0)
+    SetGlobal("K3VERD","K3AR05",1)
+    Continue()
+END

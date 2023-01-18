@@ -3,6 +3,10 @@ IF
 THEN
 RESPONSE #100
     CreateCreature("K3ZHAL",[1378.364],0)
+    CreateCreature("K3GU01",[750.776],0)
+    CreateCreature("K3GU01",[474.950],0)
+    CreateCreature("K3QUY",[746.1396],0)
+    CreateCreature("K3DEB1",[1057.515],0)
     SetGlobal("K3PRISON","K3AR03",1)
     Continue()
 END

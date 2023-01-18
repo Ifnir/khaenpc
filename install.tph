@@ -63,6 +63,36 @@ SAY NAME2 @204
 WRITE_ASCII 0x280 ~K3ZHAL~
 WRITE_ASCII 0x2cc ~K3ZHAL~ #8
 
+COPY ~KhaeNPC/creatures/K3ULA.cre~ ~override/K3ULA.cre~
+SAY NAME1 @205
+SAY NAME2 @205
+WRITE_ASCII 0x280 ~K3ULA~
+WRITE_ASCII 0x2cc ~K3ULA~ #8
+
+COPY ~KhaeNPC/creatures/K3GERV.cre~ ~override/K3GERV.cre~
+SAY NAME1 @206
+SAY NAME2 @206
+WRITE_ASCII 0x280 ~K3GERV~
+WRITE_ASCII 0x2cc ~K3GERV~ #8
+
+COPY ~KhaeNPC/creatures/K3XAV.cre~ ~override/K3XAV.cre~
+SAY NAME1 @207
+SAY NAME2 @207
+WRITE_ASCII 0x280 ~K3XAV~
+WRITE_ASCII 0x2cc ~K3XAV~ #8
+
+COPY ~KhaeNPC/creatures/K3QUY.cre~ ~override/K3QUY.cre~
+SAY NAME1 @208
+SAY NAME2 @208
+WRITE_ASCII 0x280 ~K3QUY~
+WRITE_ASCII 0x2cc ~K3QUY~ #8
+
+COPY ~KhaeNPC/creatures/K3VERD.cre~ ~override/K3VERD.cre~
+SAY NAME1 @209
+SAY NAME2 @209
+WRITE_ASCII 0x280 ~K3VERD~
+WRITE_ASCII 0x2cc ~K3VERD~ #8
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
@@ -225,7 +255,10 @@ COPY_EXISTING ~K3AR03.are~ ~override/K3AR03.are~
       WRITE_ASCII 0x94 ~K3AR03~ #8
 
 COPY_EXISTING ~K3AR04.are~ ~override/K3AR04.are~
-      WRITE_ASCII 0x94 ~K3AR04~ #8  
+      WRITE_ASCII 0x94 ~K3AR04~ #8
+
+COPY_EXISTING ~K3AR05.are~ ~override/K3AR05.are~
+      WRITE_ASCII 0x94 ~K3AR05~ #8 
 
 // 4074.1968
 //til 63,30
@@ -253,6 +286,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3AR02.baf~
 ~KhaeNPC/scripts/K3AR03.baf~
 ~KhaeNPC/scripts/K3AR04.baf~
+~KhaeNPC/scripts/K3AR05.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
