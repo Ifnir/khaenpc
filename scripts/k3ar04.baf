@@ -10,6 +10,7 @@ RESPONSE #100
     CreateCreature("K3DEB3",[1265.790],0)
     CreateCreature("K3DEB1",[1311.1018],0)
     CreateCreature("K3DEB2",[2455.1124],0)
+    CreateCreature("K3BRIX",[1308.1116],0)
     CreateCreature("K3ULA",[1866.732],0)
     CreateCreature("K3GERV",[622.1823],0)
     CreateCreature("K3XAV",[743.1793],0)

@@ -93,6 +93,12 @@ SAY NAME2 @209
 WRITE_ASCII 0x280 ~K3VERD~
 WRITE_ASCII 0x2cc ~K3VERD~ #8
 
+COPY ~KhaeNPC/creatures/K3BRIX.cre~ ~override/K3BRIX.cre~
+SAY NAME1 @210
+SAY NAME2 @210
+WRITE_ASCII 0x280 ~K3BRIX~
+WRITE_ASCII 0x2cc ~K3BRIX~ #8
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
