@@ -16,7 +16,7 @@ END
 
 // Journal
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
-  ADD_JOURNAL @0 @1 USING ~KhaeNPC\translations\%LANGUAGE%\JournalEntries.TRA~
+  ADD_JOURNAL @0 @1 @2 @3 @4 USING ~KhaeNPC\translations\%LANGUAGE%\JournalEntries.TRA~
 END
 
 // CREATURES
@@ -88,6 +88,8 @@ WRITE_ASCII 0x2cc ~K3GERV~ #8
 COPY ~KhaeNPC/creatures/K3XAV.cre~ ~override/K3XAV.cre~
 SAY NAME1 @207
 SAY NAME2 @207
+WRITE_ASCII 0x34 ~69010M~ #8
+WRITE_ASCII 0x3c ~69010L~ #8
 WRITE_ASCII 0x280 ~K3XAV~
 WRITE_ASCII 0x2cc ~K3XAV~ #8
 
@@ -314,6 +316,8 @@ COPY ~%MOD_FOLDER%/portraits/68990L.bmp~ ~override/68990L.bmp~
 COPY ~%MOD_FOLDER%/portraits/68990M.bmp~ ~override/68990M.bmp~
 COPY ~%MOD_FOLDER%/portraits/69000L.bmp~ ~override/69000L.bmp~
 COPY ~%MOD_FOLDER%/portraits/69000M.bmp~ ~override/69000M.bmp~
+COPY ~%MOD_FOLDER%/portraits/69010L.bmp~ ~override/69010L.bmp~
+COPY ~%MOD_FOLDER%/portraits/69010M.bmp~ ~override/69010M.bmp~
 
 // SCRIPTS
 
@@ -329,6 +333,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
 EXTEND_TOP ~AR0500.bcs~     ~KhaeNPC/scripts/AR0500.baf~
+EXTEND_BOTTOM ~BALDUR.bcs~   	~KhaeNPC/scripts/JournalEntries.baf~
 //ADD NEW ITEMS
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN

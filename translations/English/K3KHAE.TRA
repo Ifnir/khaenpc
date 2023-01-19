@@ -40,7 +40,14 @@
 @39 = ~Yes, <CHARNAME>. I understand. And I promise to make things right. Thank you for your forgiveness and for helping me.~ // Khae 2.10
 
 // If you decide go against Khae @12
-@100 = ~I don't trust any of you, and can be bothered to care.~
+@100 = ~I don't trust any of you, and I can be bothered to care.~
 @101 = ~I'm sad to hear that, I guess, I've to deal with this by myself.~
 @102 = ~Oh, It's you. What do you want?~
-@103 = ~I like you explain what taht dispute was about, and why those mercenaries were after you.~
+@103 = ~I like you explain what happened at the dock.~
+@104 = ~It's simple, I'm in debt, and they hired the shadow thieves to capture me. I was trying to reason with them, but I was simply out of time and before I knew it, I had run for my life.~
+@105 = ~I'm sorry, I didn't help you, it's difficult to know when to intervene in dangerous confrontations.~
+@106 = ~You're ain't a clever one, how dumb must you be to get the shadow thieves after you?~
+@107 = ~It's quite alright.. Hey, if you're still up for it, I could use your help, I like to resolve this issue.~
+@108 = ~You don't my situation, and I would be damn to stand here listen to your insults. Begone!~
+@109 = ~I don't want anything to do with you.~ 
+@110 = ~Sure, why not.~

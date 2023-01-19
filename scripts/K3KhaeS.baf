@@ -102,6 +102,7 @@ IF
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	See(Player1)
 	!AreaCheck("AR0300")
+	!See(NearestEnemyOf(Myself))
 THEN 
 RESPONSE #100
     StartDialogueNoSet(Player1) 
