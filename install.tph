@@ -48,24 +48,32 @@ WRITE_ASCII 0x2cc ~K3GU01~ #8
 COPY ~KhaeNPC/creatures/K3EBRI.cre~ ~override/K3EBRI.cre~
 SAY NAME1 @202
 SAY NAME2 @202
+WRITE_ASCII 0x34 ~69000M~ #8
+WRITE_ASCII 0x3c ~69000L~ #8
 WRITE_ASCII 0x280 ~K3EBRI~
 WRITE_ASCII 0x2cc ~K3EBRI~ #8
 
 COPY ~KhaeNPC/creatures/K3BROR.cre~ ~override/K3BROR.cre~
 SAY NAME1 @203
 SAY NAME2 @203
+WRITE_ASCII 0x34 ~68990M~ #8
+WRITE_ASCII 0x3c ~68990L~ #8
 WRITE_ASCII 0x280 ~K3BROR~
 WRITE_ASCII 0x2cc ~K3BROR~ #8
 
 COPY ~KhaeNPC/creatures/K3ZHAL.cre~ ~override/K3ZHAL.cre~
 SAY NAME1 @204
 SAY NAME2 @204
+WRITE_ASCII 0x34 ~68950M~ #8
+WRITE_ASCII 0x3c ~68950L~ #8
 WRITE_ASCII 0x280 ~K3ZHAL~
 WRITE_ASCII 0x2cc ~K3ZHAL~ #8
 
 COPY ~KhaeNPC/creatures/K3ULA.cre~ ~override/K3ULA.cre~
 SAY NAME1 @205
 SAY NAME2 @205
+WRITE_ASCII 0x34 ~68970M~ #8
+WRITE_ASCII 0x3c ~68970L~ #8
 WRITE_ASCII 0x280 ~K3ULA~
 WRITE_ASCII 0x2cc ~K3ULA~ #8
 
@@ -86,18 +94,24 @@ WRITE_ASCII 0x2cc ~K3XAV~ #8
 COPY ~KhaeNPC/creatures/K3QUY.cre~ ~override/K3QUY.cre~
 SAY NAME1 @208
 SAY NAME2 @208
+WRITE_ASCII 0x34 ~68980M~ #8
+WRITE_ASCII 0x3c ~68980L~ #8
 WRITE_ASCII 0x280 ~K3QUY~
 WRITE_ASCII 0x2cc ~K3QUY~ #8
 
 COPY ~KhaeNPC/creatures/K3VERD.cre~ ~override/K3VERD.cre~
 SAY NAME1 @209
 SAY NAME2 @209
+WRITE_ASCII 0x34 ~68930M~ #8
+WRITE_ASCII 0x3c ~68930L~ #8
 WRITE_ASCII 0x280 ~K3VERD~
 WRITE_ASCII 0x2cc ~K3VERD~ #8
 
 COPY ~KhaeNPC/creatures/K3BRIX.cre~ ~override/K3BRIX.cre~
 SAY NAME1 @210
 SAY NAME2 @210
+WRITE_ASCII 0x34 ~68940M~ #8
+WRITE_ASCII 0x3c ~68940L~ #8
 WRITE_ASCII 0x280 ~K3BRIX~
 WRITE_ASCII 0x2cc ~K3BRIX~ #8
 
@@ -286,6 +300,20 @@ COPY ~%MOD_FOLDER%/portraits/68920L.bmp~ ~override/68920L.bmp~
 COPY ~%MOD_FOLDER%/portraits/68920M.bmp~ ~override/68920M.bmp~
 COPY ~%MOD_FOLDER%/portraits/68930L.bmp~ ~override/68930L.bmp~
 COPY ~%MOD_FOLDER%/portraits/68930M.bmp~ ~override/68930M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68940L.bmp~ ~override/68940L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68940M.bmp~ ~override/68940M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68950L.bmp~ ~override/68950L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68950M.bmp~ ~override/68950M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68960L.bmp~ ~override/68960L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68960M.bmp~ ~override/68960M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68970L.bmp~ ~override/68970L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68970M.bmp~ ~override/68970M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68980L.bmp~ ~override/68980L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68980M.bmp~ ~override/68980M.bmp~
+COPY ~%MOD_FOLDER%/portraits/68990L.bmp~ ~override/68990L.bmp~
+COPY ~%MOD_FOLDER%/portraits/68990M.bmp~ ~override/68990M.bmp~
+COPY ~%MOD_FOLDER%/portraits/69000L.bmp~ ~override/69000L.bmp~
+COPY ~%MOD_FOLDER%/portraits/69000M.bmp~ ~override/69000M.bmp~
 
 // SCRIPTS
 
