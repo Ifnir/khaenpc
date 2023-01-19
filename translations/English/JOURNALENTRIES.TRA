@@ -1,4 +1,8 @@
-@0 = ~Bet on a wizard
-You meet a wizard in discreet, asking for help, and decided to meddle.~
-@1 = ~ Problem with gambling
-Khae has joined you in your adventure, and you learned, he's in debt to Bror, he owes 3000 gold.~
+@0 = ~Assist the Wizard
+A wizard is being hunted by the shadow thieves. Help him by delving into the Bridge District's sewers to negotiate with the guildmaster and resolve Khae's ongoing dispute with the shadow thieves.~
+@1 = ~Embezzlement in the Sewers
+Bror suspects someone of embezzling funds and trying to oust him as guildmaster. You've agreed to help gather evidence and uncover the culprit, absolving the debt in the process. Bror suggest you start with Gervel, who administrate blackmail, kidnapping and contraband~
+@2 = ~A friendly Thief
+You meet Gervel, a affable thief and his assistant Xavnan. He has noticed himself missing merchandizes, and direct me toward Zhal.~
+@3 = ~This grumpy orc wants you hunt a fugitive, and bring him back dead or live. He might still be in the sewers.~
+@4 = ~You found Ebrif, who wants help to escape, and can requite with information, he overheard in the prison cell.~ 
