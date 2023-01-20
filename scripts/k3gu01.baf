@@ -1,0 +1,6 @@
+IF
+    Global("K3Q1","GLOBAL",1)
+THEN
+	RESPONSE #100
+        StartDialogueNoSet(Player1)
+END
