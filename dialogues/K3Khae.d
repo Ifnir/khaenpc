@@ -18,7 +18,7 @@ IF~Global("K3DEBT","GLOBAL",0) Global("K3Q1","Global",0)~ THEN K3KHAE KHAE.00.00
 DO ~FadeToColor([30.0],0)
     Wait(1)
     ClearAllActions()
-    MoveViewPoint([3109.2573],INSTANT)
+    MoveViewPoint([3936.721],INSTANT)
     StartCutSceneMode()
     StartCutScene("K3CUT01")~  EXIT
 
@@ -88,7 +88,7 @@ IF~~ THEN REPLY @30 EXTERN K3KHAE KHAE.JOIN2
 
 CHAIN K3KHAE KHAE.JOIN1
 @29
-DO ~JoinParty() SetGlobal("K3Q1","Global",1)~ EXIT
+DO ~JoinParty()~ EXIT
 
 CHAIN K3KHAE KHAE.JOIN2
 @31
@@ -112,7 +112,7 @@ IF~~ THEN REPLY @38 EXTERN K3KHAE KHAE.JOIN2.4
 
 CHAIN K3KHAE KHAE.JOIN2.4
 @39
-DO ~JoinParty() SetGlobal("K3Q1","Global",1)~ EXIT
+DO ~JoinParty()~ EXIT
 
 // Teleports out.
 CHAIN K3KHAE RUN.01
@@ -139,7 +139,7 @@ IF~~ THEN REPLY @106 EXTERN K3KHAE KHAE.HIDE4
 CHAIN K3KHAE KHAE.HIDE3
 @107
 END
-IF~~ THEN REPLY @110 DO ~JoinParty() SetGlobal("K3Q1","Global",1)~ EXIT
+IF~~ THEN REPLY @110 DO ~JoinParty()~ EXIT
 
 CHAIN IF~Global("K3INSULT","AR0021",0)~ THEN K3KHAE KHAE.HIDE4
 @108

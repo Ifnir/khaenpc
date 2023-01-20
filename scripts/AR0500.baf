@@ -1,5 +1,6 @@
 IF
     Global("K3Mark","AR0500",0)
+    Global("K3Q1","GLOBAL",1)
 THEN
     RESPONSE #100
     AddMapNote([3963.1920],@10000)
