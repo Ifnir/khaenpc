@@ -1,19 +1,19 @@
-// Set K3MeetKhae from 0 to 1, when he joins the party.
+// Set K3Q1 from 0 to 1, when he joins the party.
 IF
-Global("K3MeetKhae", "GLOBAL",1)
-Global("K3KhaeQuestJournal","GLOBAL",0)
+Global("K3Q1","GLOBAL",1)
+Global("K3KhaeQJ1","GLOBAL",0)
 THEN
 RESPONSE #100
-AddJournalEntry(@0, QUEST)
-SetGlobal("K3KhaeQuestJournal", "GLOBAL",1)
+AddJournalEntry(@0,QUEST)
+SetGlobal("K3KhaeQJ1","GLOBAL",1)
 END
 
 IF
-Global("K3MeetKhae", "GLOBAL",2)
-Global("K3KhaeQuestJournal","GLOBAL",1)
+Global("K3Q1", "GLOBAL",2)
+Global("K3KhaeQJ1","GLOBAL",1)
 THEN
 RESPONSE #100
 EraseJournalEntry(@0)
 AddJournalEntry(@1, QUEST)
-SetGlobal("K3KhaeQuestJournal", "GLOBAL",2)
+SetGlobal("K3KhaeQJ1", "GLOBAL",2)
 END

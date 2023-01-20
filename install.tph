@@ -14,11 +14,6 @@ LAF HANDLE_AUDIO
     sox_path = ~KhaeNPC/audio/Khae~
 END
 
-// Journal
-ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
-  ADD_JOURNAL @0 @1 @2 @3 @4 USING ~KhaeNPC\translations\%LANGUAGE%\JournalEntries.TRA~
-END
-
 // CREATURES
 
 COPY ~KhaeNPC/creatures/K3DEB1.cre~ ~override/K3DEB1.cre~
@@ -290,10 +285,11 @@ COPY_EXISTING ~K3AR05.are~ ~override/K3AR05.are~
 COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
       WRITE_ASCII 0x94 ~AR0500~ #8 
 
-// JOURNALS 
+// JOURNALS AND SETUP
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   LOAD_TRA ~KhaeNPC\Translations\%LANGUAGE%\SETUP.TRA~
+  ADD_JOURNAL @0 @1 @2 @3 @4 USING ~KhaeNPC\Translations\%LANGUAGE%\journalentries.TRA~
 END
 
 // Portraits
@@ -333,7 +329,7 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
 EXTEND_TOP ~AR0500.bcs~     ~KhaeNPC/scripts/AR0500.baf~
-EXTEND_BOTTOM ~BALDUR.bcs~   	~KhaeNPC/scripts/JournalEntries.baf~
+EXTEND_TOP ~BALDUR.bcs~   	~KhaeNPC/scripts/JournalEntries.baf~
 //ADD NEW ITEMS
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
