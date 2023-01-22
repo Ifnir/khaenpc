@@ -1,3 +1,4 @@
+//Check out MaeVar script to start dialogue
 BEGIN K3GU01
 
 CHAIN 

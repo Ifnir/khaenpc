@@ -180,6 +180,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 // ~KhaeNPC/scripts/K3KhaeD.baf~ // Dream script if needed
 ~KhaeNPC/dialogues/K3gu01.d~ // Guard Dialogue
 ~KhaeNPC/dialogues/K3ebri.d~ 
+~KhaeNPC/dialogues/K3bror.d~
+~KhaeNPC/dialogues/K3gerv.d~  
 
 // Tob
 

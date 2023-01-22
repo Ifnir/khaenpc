@@ -1,0 +1,30 @@
+// Encounter with Bror = ~~
+
+// Start
+@201 = ~Ah, welcome adventurer. I am the leader here in the sewers, and I see you bought Khae along. How delightful, are you ready to pay your debt, or is it slice and dice?.~ 
+@202 = ~Do I look like I need service from strangers, ~
+@203 = ~I do have a problem that I believe you can help me with. Someone within my organization has been embezzling funds, I need you to investigate and root out the traitor. In return, I will pardon Khae.~
+
+// Don't accept
+@204 = ~Of course, take your time. However, keep in mind, time is of the essence. I'll provide you with all the resources at my disposal, and there is a reward for you.~
+@205 = ~I look forward to hearing from you. Just keep in mind, the stakes are high, but so are the rewards.~
+
+// Accept
+@206 = ~I'll advise you to find Gervel, he's my right-hand and has a possible lead to who the traitor is.~
+
+// Start conversation
+@221 = ~Greetings Bror, on the contrary, we are here to offer our service.~ // Player
+@222 = ~You don't, but we want to resolve Khae's debt, in some other means.~
+
+// if you don't accept
+@223 = ~I'll have to think about it. Can I have some time to consider your offer?"~
+@224 = ~I understand. I'll let you know my decision as soon as possible.~
+
+// If you accepts
+@225 = ~We'll take your offer, where do you like us to begin with?~
+
+// Talk Again
+@207 = ~You are back, are you going to take the job?~
+@208 = ~I'm sad to hear, I could've used outside help, but no matter, the debt is gone.~
+@226 = ~Yes, we are.~
+@227 = ~No, we decide to pay Khae debt.~
