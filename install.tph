@@ -38,8 +38,8 @@ COPY ~KhaeNPC/creatures/K3GU01.cre~ ~override/K3GU01.cre~
 SAY NAME1 @201
 SAY NAME2 @201
 WRITE_ASCII 0x280 ~K3GU01~
-WRITE_ASCII 0x248 ~K3GU01~
 WRITE_ASCII 0x2cc ~K3GU01~ #8
+WRITE_ASCII 0x260 ~K3GU01~ #8
 
 COPY ~KhaeNPC/creatures/K3EBRI.cre~ ~override/K3EBRI.cre~
 SAY NAME1 @202
@@ -56,6 +56,7 @@ WRITE_ASCII 0x34 ~68990M~ #8
 WRITE_ASCII 0x3c ~68990L~ #8
 WRITE_ASCII 0x280 ~K3BROR~
 WRITE_ASCII 0x2cc ~K3BROR~ #8
+WRITE_ASCII 0x260 ~K3BROR~ #8
 
 COPY ~KhaeNPC/creatures/K3ZHAL.cre~ ~override/K3ZHAL.cre~
 SAY NAME1 @204
@@ -182,6 +183,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/dialogues/K3ebri.d~ 
 ~KhaeNPC/dialogues/K3bror.d~
 ~KhaeNPC/dialogues/K3gerv.d~  
+~KhaeNPC/scripts/K3bror.baf~  
+~KhaeNPC/scripts/K3gu01.baf~  
 
 // Tob
 

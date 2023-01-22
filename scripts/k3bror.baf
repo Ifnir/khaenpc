@@ -1,11 +1,12 @@
 IF
     Global("K3Q1","GLOBAL",1)
-    Global("K3BRORWAITING","GLOBAL",0)
 	Range([PC],10)
 	NumberOfTimesTalkedTo(0)
 	See([PC])
+	OR(2)
+		Allegiance(Myself,NEUTRAL)
+		Allegiance(Myself,GOODBUTBLUE)
 THEN
 	RESPONSE #100
-        SetGlobal("K3BRORWAITING","GLOBAL",1)
 		StartDialogueNoSet([PC])
 END
