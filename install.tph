@@ -339,6 +339,7 @@ COPY ~%MOD_FOLDER%/portraits/69010M.bmp~ ~override/69010M.bmp~
 COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
+~KhaeNPC/scripts/K3CUT04.baf~
 ~KhaeNPC/scripts/K3AR01.baf~
 ~KhaeNPC/scripts/K3AR02.baf~
 ~KhaeNPC/scripts/K3AR03.baf~

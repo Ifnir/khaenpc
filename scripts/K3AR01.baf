@@ -24,18 +24,14 @@ END
 If
     Global("K3GERVQUEST","GLOBAL",2)
     Global("K3Ambush","AR0500",0)
+    NearLocation(Player1,1612,1592,30)
 THEN
 RESPONSE #100
     CreateCreature("K3ebri",[2805.1380],0)
-    CreateCreature("K3DEB1",[1618.1466],0)
-    CreateCreature("K3DEB2",[1746.1553],0)
-    CreateCreature("K3DEB3",[1717.1660],0)
-    CreateCreature("K3DEB4",[1615.1583],0)
-    CreateCreature("K3DEB5",[1424.1359],0)
-    ActionOverride("K3DEB1",Enemy())
-    ActionOverride("K3DEB2",Enemy())
-    ActionOverride("K3DEB3",Enemy())
-    ActionOverride("K3DEB4",Enemy())
-    ActionOverride("K3DEB5",Enemy())
-    SetGlobal("K3Ambush","AR0500",1)
+    FadeToColor([30.0],0)
+    Wait(1)
+    ClearAllActions()
+    MoveViewPoint([1612.1592],INSTANT)
+    StartCutSceneMode()
+    StartCutScene("K3CUT04")
 END
