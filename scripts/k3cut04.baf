@@ -24,4 +24,5 @@ THEN
         Wait(2)
         EndCutSceneMode()
         SetGlobal("K3Ambush","GLOBAL",1)
+        ActionOverride("K3DEB1",StartDialogueNoSet(Player1))
 END

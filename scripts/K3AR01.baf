@@ -36,6 +36,13 @@ RESPONSE #100
     StartCutScene("K3CUT04")
 END
 
+IF 
+    HPPercentLT("K3DEB1",30)
+THEN
+RESPONSE #100
+    PlayDead(240)
+END
+
 IF
     Global("K3GERVQUEST","GLOBAL",2)
 THEN
