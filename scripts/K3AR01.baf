@@ -27,7 +27,6 @@ If
     NearLocation(Player1,1612,1592,10)
 THEN
 RESPONSE #100
-    
     FadeToColor([30.0],0)
     Wait(1)
     ClearAllActions()
@@ -37,10 +36,34 @@ RESPONSE #100
 END
 
 IF 
-    HPPercentLT("K3DEB1",30)
+    Global("K3Ambush","GLOBAL",1)
+    HPPercentLT("K3DEB1",50)
 THEN
 RESPONSE #100
-    PlayDead(240)
+    SetGlobal("K3Ambush","GLOBAL",2)
+    ActionOverride("K3DEB1", PlayDead(240))
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+    ChangeEnemyAlly("K3DEB1",NEUTRAL)
+    Continue()
+END
+
+IF 
+    Global("K3Ambush","GLOBAL",2)
+    Dead("K3DEB2")
+    Dead("K3DEB3")
+    Dead("K3DEB4")
+    Dead("K3DEB5")
+THEN
+RESPONSE #100
+    ActionOverride("K3DEB1",StartDialogueNoSet(Player1))
+    SetGlobal("K3Ambush","GLOBAL",3)
+END
+
+IF
+    Global("K3Ambush","GLOBAL",3)
+THEN
+RESPONSE #100
+    Kill("K3DEB1")
 END
 
 IF
