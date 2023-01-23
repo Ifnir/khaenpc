@@ -1,0 +1,35 @@
+@101 = ~Don't get close, who are you working for?~
+
+@201 = ~Zhal requested me to look for someone, you shouldn't by any chance be, Ebrif?~
+@301 = ~No one particular, Khae is on the way to pay off his debt to the shadow thieves.~
+@401 = ~Take it easy, I'm working for no one, who are you hiding from?~
+
+@102 = ~No, I don't want to go back, I rather die!~
+@103 = ~I don't believe you, the shadow thieves wouldn't let any roam free on their territory.~
+@104 = ~None of your business, you properly working for the shadow thieves. Kill me now, you're not getting me alive.~
+
+@202 = ~I don't care, say your last prayer.~
+@203 = ~Well, we're working for them, that said, we woudln't do anything that goes against our moral compass.~
+
+@105 = ~Oh, That's a relief, I was worried this was going to be my final moment. I'm Ebrif, as you might pressume, what's your name?~
+
+@501 = ~I'm <CHARNAME>, may I ask how you end up here?~
+
+@106 = ~I was in love with a women, she was younger than me, and I assume her father is the reason the shadow thieves kidnapped me. You see, she comes from a wealthy family, and I'm a simple peasant.~
+
+@601 = ~I'm about to cry, wah, wah. I hope, you're not fooling yourself with this ridiculous romance. I bet, she's only with you to annoy her father.~
+@602 = ~How awful, unfortunately, the shadow thieves are looking for you, and they tasked me to return you.~
+
+@107 = ~Help me escape, I'll do anything for it.~
+@1071 = ~So what! I don't care about your opinion, you ask for my story, and then you ridicule me. you might as well just slay me now, if you don't have any intention of helping me.~
+@7071 = ~Easy big guy, we're not going to slay you.~
+
+@701 = ~We could help you escape, but it has to be through the exit, maybe a disguised.~
+
+@108 = ~That's a great idea, do you know where we could find a uniform.~
+
+@801 = ~I've look into it, however, meanwhile I will ask you to find something I can use to prove I killed you.~
+
+@109 = ~I'll do that, thank you for your help, you don't know how much this means for me.~
+
+// create item to disguise Ebrif as shadow thief, use deb1 model. 
