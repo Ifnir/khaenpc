@@ -24,7 +24,7 @@ END
 If
     Global("K3GERVQUEST","GLOBAL",2)
     Global("K3Ambush","GLOBAL",0)
-    NearLocation(Player1,1612,1592,10)
+    NearLocation(Player1,1612,1592,20)
 THEN
 RESPONSE #100
     FadeToColor([30.0],0)
@@ -36,8 +36,20 @@ RESPONSE #100
 END
 
 IF
+    Global("K3Ambush","GLOBAL",2)
+THEN
+RESPONSE #100
+    ActionOverride("K3DEB2",Enemy())
+    ActionOverride("K3DEB3",Enemy())
+    ActionOverride("K3DEB4",Enemy())
+    ActionOverride("K3DEB5",Enemy())
+END
+
+IF
+    Global("HelpEbrif","GLOBAL",0)
     Global("K3GERVQUEST","GLOBAL",2)
 THEN
 RESPONSE #100
     CreateCreature("K3ebri",[2805.1380],0)
+    SetGlobal("HelpEbrif","GLOBAL",1)
 END

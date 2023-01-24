@@ -10,7 +10,7 @@
 @205 = ~I look forward to hearing from you. Just keep in mind, the stakes are high, but so are the rewards.~
 
 // Accept
-@206 = ~I'll advise you to find Gervel, he's my right-hand and has a possible lead to who the traitor is.~
+@206 = ~Great, I'll advise you to find Gervel, he's my right-hand and has a possible lead to who the traitor is. You can find him at the south entry of the sewers.~
 
 // Start conversation
 @221 = ~Greetings Bror, on the contrary, we are here to offer our service.~ // Player
@@ -26,5 +26,5 @@
 // Talk Again
 @207 = ~You are back, are you going to take the job?~
 @208 = ~I'm sad to hear, I could've used outside help, but no matter, the debt is gone.~
-@226 = ~Yes, we are.~
+@226 = ~Yes, we are. We already have to save gold, so we can't afford to pay.~
 @227 = ~No, we decide to pay Khae debt.~
