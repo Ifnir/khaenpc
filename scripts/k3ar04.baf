@@ -17,3 +17,12 @@ RESPONSE #100
     SetGlobal("K3HALL","K3AR04",1)
     Continue()
 END
+
+IF
+    Global("K3EbriDisguise","GLOBAL",0)
+    Global("K3GERVQUEST","GLOBAL",3)
+    PartyHasItem("K3STDI")
+THEN
+RESPONSE #100
+     SetGlobal("K3EbriDisguise","GLOBAL",1)
+END

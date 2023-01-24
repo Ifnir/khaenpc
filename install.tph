@@ -351,6 +351,7 @@ EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~
 EXTEND_TOP ~AR0500.bcs~     ~KhaeNPC/scripts/AR0500.baf~
 EXTEND_TOP ~BALDUR.bcs~   	~KhaeNPC/scripts/JournalEntries.baf~
+
 //ADD NEW ITEMS
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
