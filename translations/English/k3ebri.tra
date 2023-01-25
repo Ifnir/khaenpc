@@ -33,3 +33,32 @@
 @109 = ~I'll do that, thank you for your help, you don't know how much this means for me.~
 
 // create item to disguise Ebrif as shadow thief, use deb1 model. 
+
+@110 = ~Yes. You got it, thank godness. Alright, I found out someone that resemble me a lot, maybe his head could fool the orc to think you killed me.~
+
+@901 = ~That's good, where do I find him?~
+
+@111 = ~Well, you see, he meets up with another shadow thief, and..~
+
+@902 = ~And what, spit it out, what is it?~
+
+@112 = ~He has relation with him, I guess, that's the best way to put it.~
+
+@903 = ~Ooooh, oh.. That's unfortunate.~
+
+@113 = ~Yeah.. maybe there's another way, but it's entirely up to you.~
+
+@904 = ~Naaah, to much of a hazzle, I promise, to help you escape and it's not like I'm killing good people.~
+@905 = ~Sucks to be them.~
+@906 = ~I guess, I've to find another way, I'm not a savage.~
+
+@114 = ~Ok.. I appreciate your help, nonetheless. I'll be waiting here.~
+@115 = ~Ok, I don't how I can be to any help, although I do have information, I did eavesdrop when I was in their prisoner.~
+
+@907 = ~Really, what kind of, the only reason I assisted Zhal was to gain his trust, if you know something about a mutiny, then I don't need him.~
+
+@116 = ~There was a prisoner, let go by someone, he was very usual in his appearance, I couldn't see his face. But I definitely heard an old man.~
+
+@908 = ~Alright it's something, thanks for the info, I think you should go now, while there is only one guard.~ // Khae
+
+@117 = ~Yes, thanks for everything, I'll never forget you, if you need anything, go find me, I'm normally at the dock.~

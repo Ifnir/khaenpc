@@ -25,6 +25,7 @@ IF
 THEN
 RESPONSE #100
     SetGlobal("K3EbriDisguise","K3AR04",1)
+    SetGlobal("K3EBRIFQUEST","GLOBAL",2)
     ActionOverride("Container19",CreateItem("K3STDI",0,0,0))
     Continue()
 END
