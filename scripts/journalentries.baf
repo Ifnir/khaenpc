@@ -18,6 +18,15 @@ AddJournalEntry(@1, QUEST)
 SetGlobal("K3KhaeQJ1", "GLOBAL",2)
 END
 
+IF
+Global("K3EBRIFQUEST","GLOBAL",1)
+Global("K3EBRIJOURNAL","GLOBAL",0)
+THEN
+RESPONSE #100
+AddJournalEntry(@100,QUEST)
+SetGlobal("K3EBRIJOURNAL","GLOBAL",1)
+END
+
 
 IF
 Global("K3Q1", "GLOBAL",1)

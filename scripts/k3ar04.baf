@@ -21,8 +21,10 @@ END
 IF
     Global("K3EbriDisguise","GLOBAL",0)
     Global("K3GERVQUEST","GLOBAL",3)
-    PartyHasItem("K3STDI")
+    Global("K3EBRIFQUEST","GLOBAL",1)
+    //PartyHasItem("K3STDI")
 THEN
 RESPONSE #100
-     SetGlobal("K3EbriDisguise","GLOBAL",1)
+    ActionOverride("Container 19",CreateItem("K3STDI",0,0,0))
+    SetGlobal("K3EbriDisguise","GLOBAL",1)
 END
