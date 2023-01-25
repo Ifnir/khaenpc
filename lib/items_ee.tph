@@ -15,3 +15,14 @@ COPY ~KhaeNPC/items/K3STDI.itm~ ~override/K3STDI.itm~
 SAY NAME1 @2
 SAY NAME2 @2
 SAY DESC @3
+
+COPY ~KhaeNPC/items/K3NOTE1.itm~ ~override/K3NOTE1.itm~
+SAY NAME1 @4
+SAY NAME2 @4
+SAY DESC @5
+
+COPY ~KhaeNPC/items/K3HEAD.itm~ ~override/K3HEAD.itm~
+SAY NAME1 @6
+SAY NAME2 @6
+SAY DESC @7
+
