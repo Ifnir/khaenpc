@@ -94,4 +94,5 @@ CHAIN K3EBRI DISG.4.4
 @117
 DO ~TakePartyItem("K3STDI")
 SetGlobal("K3EBRIFQUEST","GLOBAL",3)
-ActionOverride("K3EBRI",Polymorph(SHADOW_THIEF))~ EXIT
+ActionOverride("K3EBRI",Polymorph(SHADOW_THIEF))
+ActionOverride("K3EBRI",EscapeAreaObject("Tran5007a")) ~ EXIT
