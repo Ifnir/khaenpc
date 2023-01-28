@@ -48,5 +48,5 @@ EXTERN K3GERV QUEST2.2
 CHAIN K3GERV QUEST2.2
 ~Well, no worries. Let's move on, I've recently found out one of our close customer, Deidre, is missing her contraband. 
 Her men is continous getting high-jacked and in some instances killed. I need you to go talk to her and resolve this matter, it might let us closer to any clue to who is the traitor among us.~
-DO ~SetGlobal("K3GERVQUEST","GLOBAL",1)~ EXIT
+DO ~SetGlobal("K3GERVQUEST","GLOBAL",3)~ EXIT
 
