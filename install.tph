@@ -310,7 +310,7 @@ COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   LOAD_TRA ~KhaeNPC\Translations\%LANGUAGE%\SETUP.TRA~
-  ADD_JOURNAL @0 @1 @100 @200 USING ~KhaeNPC\Translations\%LANGUAGE%\journalentries.TRA~
+  ADD_JOURNAL @0 @1 @100 @101 USING ~KhaeNPC\Translations\%LANGUAGE%\journalentries.TRA~
 END
 
 // Portraits

@@ -49,6 +49,6 @@ Global("DEIDREIMPORT","GLOBAL",1)
 Global("DEIDRQuest","GLOBAL",0)
 THEN
 RESPONSE #100
-AddJournalEntry(@101,QUEST)
 SetGlobal("DEIDRQuest","GLOBAL",1)
+AddJournalEntry(@101,QUEST)
 END
