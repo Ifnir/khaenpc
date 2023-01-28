@@ -13,12 +13,12 @@ IF~~THEN REPLY @202 EXTERN K3DEB2 AMB1.2
 CHAIN K3DEB2 AMB1.2
 @103
 == K3DEB1 @104
-DO ~Enemy() SetGlobal("K3Ambush","GLOBAL",2)~ EXIT
+DO ~Enemy() SetGlobal("K3Ambush","K3AR01",2)~ EXIT
 
 CHAIN K3DEB1 AMB2.1
 @105
-DO ~Enemy() SetGlobal("K3Ambush","GLOBAL",2)~ EXIT
+DO ~Enemy() SetGlobal("K3Ambush","K3AR01",2)~ EXIT
 
 CHAIN K3DEB1 AMB3.1
 @106
-DO ~Enemy() SetGlobal("K3Ambush","GLOBAL",2)~ EXIT
+DO ~Enemy() SetGlobal("K3Ambush","K3AR01",2)~ EXIT

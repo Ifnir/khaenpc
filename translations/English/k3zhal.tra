@@ -16,8 +16,17 @@
 @202 = ~That's unfortunate, how about I unburden you and find this human. What's his name?~
 @203 = ~How did Ebrif escape?~
 
-@105 = ~Ya got se head, good humon. Me not so mad mo're. Me hav' nother job for ya, yo in?~
+@105 = ~Ya got se head, good humon. Me not so mad mo're. Me hav' no other job for ya, but ya wanna reward?~
 
-@301 = ~Alright, what's next?~
+@301 = ~Alright, I like the reward?~
 
-@106 = ~Wie got cha customar, she bai missin' er stuff, she wil bai da venture mart, ya go talk now.~
+@106 = ~HAHAHAHA!! The're be no reward for ya, stupid man. Ai got nothin' for ya, ya gotta go to Gervel a'gain, he migh hafe some for ya.~
+@302 = ~Alright, good one, but before I go, you're loyal to Bror, right?~
+
+@107 = ~Jaaj, Bror be honorful man, he gave me this, good man, good man!! Ai is loyal to hem.~
+
+@303 = ~Good, you wouldn't have notice someone doing something they ain't shouldn't?~
+
+@108 = ~Naah, maybe. Some be unlock'in da broke jail cel, usin' it to move oaught noticing. Me put da guard to watch.~
+
+@304 = ~Alright, thanks, very useful information.~

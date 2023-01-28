@@ -1,6 +1,6 @@
 IF
     Global("K3GERVQUEST","GLOBAL",2)
-    Global("K3Ambush","GLOBAL",0)
+    Global("K3Ambush","K3AR01",0)
 THEN
 	RESPONSE #100
 		CutSceneId(Player1)	
@@ -23,6 +23,6 @@ THEN
         ActionOverride("K3DEB5",MoveToPoint([1392.1519]))
         Wait(2)
         EndCutSceneMode()
-        SetGlobal("K3Ambush","GLOBAL",1)
+        SetGlobal("K3Ambush","K3AR01",1)
         ActionOverride("K3DEB1",StartDialogueNoSet(Player1))
 END
