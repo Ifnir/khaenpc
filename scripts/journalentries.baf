@@ -46,8 +46,9 @@ END
 
 IF
 Global("DEIDREIMPORT","GLOBAL",1)
-Global("DEIDREIMPORTJOURNAL","GLOBAL",0)
+Global("DEIDRQuest","GLOBAL",0)
 THEN
 RESPONSE #100
-AddJournalEntry(@200,QUEST)
+AddJournalEntry(@101,QUEST)
+SetGlobal("DEIDRQuest","GLOBAL",1)
 END
