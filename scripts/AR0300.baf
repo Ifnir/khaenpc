@@ -22,10 +22,12 @@ END
 // Position 4516.2249
 
 IF
-    NightmareModeOn()
-    Global("DEIDREIMPORT","GLOBAL",1)
+    Time(1)
+    Global("DEIDREIMPORT","GLOBAL",2)
 THEN
 RESPONSE #100
-    CreateCreature("K3KHAE",[4425.2248],0)
-    CreateCreature("K3KHAE",[4516.2249],0)
+    CreateCreature("K3DEB1",[4425.2248],0)
+    CreateCreature("K3DEB2",[4516.2249],0)
+    SetGlobal("DEIDREIMPORT","Global",3)
+    Continue()
 END

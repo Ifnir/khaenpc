@@ -1,18 +1,1 @@
-@101 = ~You must be <CHARNAME>. You'll regret you came here.~
-@102 = ~I'mmm... a orphan.~
-@103 = ~Who is this person, he's so quick-witted.~ //Deb2
-@104 = ~Shutup! Talking is over, you'll die!~ // Extend to Deb1
-
-@201 = ~I think your mother regretted you more.~ // if aligment evil
-@202 = ~That'sss obvious, who would ever want a piss poor child like you.~
-
-@301 = ~Who sent you?~
-@105 = ~Wouldn't matter, your time is over.~
-
-@401 = ~Can't we talk this over, surely there must be a peaceful way to solve this.~
-@106 = ~No. Who do you think this is?~
-
-
-//When the last one is dead
-@501 = ~Tell us, who sent you~ // Khae
-@107 = ~You'll never get anything out of us!~
+@101 = ~You must be <CHARNAME>. We were expecting you..~
