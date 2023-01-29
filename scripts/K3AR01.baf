@@ -21,36 +21,6 @@ RESPONSE #100
     DisplayStringHead("K3KHAE",@5003)
 END
 
-// Check out last battle against Jon Irenicus or Spellhole to understand how to make the character follow a path
-If
-    Global("K3GERVQUEST","GLOBAL",2)
-    Global("K3Ambush","K3AR01",0)
-    AreaCheck("K3AR01")
-    !AreaCheck("K3AR02")
-    !AreaCheck("K3AR03")
-    !AreaCheck("K3AR04")
-    !AreaCheck("K3AR05")
-    NearLocation(Player1,1612,1592,20)
-THEN
-RESPONSE #100
-    FadeToColor([30.0],0)
-    Wait(1)
-    ClearAllActions()
-    MoveViewPoint([1612.1592],INSTANT)
-    StartCutSceneMode()
-    StartCutScene("K3CUT04")
-END
-
-IF
-    Global("K3Ambush","K3AR01",2)
-THEN
-RESPONSE #100
-    ActionOverride("K3DEB2",Enemy())
-    ActionOverride("K3DEB3",Enemy())
-    ActionOverride("K3DEB4",Enemy())
-    ActionOverride("K3DEB5",Enemy())
-END
-
 IF
     Global("HelpEbrif","GLOBAL",0)
     Global("K3GERVQUEST","GLOBAL",2)

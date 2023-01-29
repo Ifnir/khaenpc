@@ -126,6 +126,18 @@ WRITE_ASCII 0x3c ~68940L~ #8
 WRITE_ASCII 0x280 ~K3BRIX~
 WRITE_ASCII 0x2cc ~K3BRIX~ #8
 
+COPY ~KhaeNPC/creatures/K3VAM1.cre~ ~override/K3VAM1.cre~
+SAY NAME1 @211
+SAY NAME2 @211
+WRITE_ASCII 0x280 ~K3VAM1~
+WRITE_ASCII 0x2cc ~K3VAM1~ #8
+
+COPY ~KhaeNPC/creatures/K3VAM2.cre~ ~override/K3VAM2.cre~
+SAY NAME1 @211
+SAY NAME2 @211
+WRITE_ASCII 0x280 ~K3VAM2~
+WRITE_ASCII 0x2cc ~K3VAM2~ #8
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
@@ -341,7 +353,6 @@ COPY ~%MOD_FOLDER%/portraits/69010M.bmp~ ~override/69010M.bmp~
 COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3CUT02.baf~
 ~KhaeNPC/scripts/K3CUT03.baf~
-~KhaeNPC/scripts/K3CUT04.baf~
 ~KhaeNPC/scripts/K3AR01.baf~
 ~KhaeNPC/scripts/K3AR02.baf~
 ~KhaeNPC/scripts/K3AR03.baf~

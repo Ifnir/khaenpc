@@ -17,3 +17,15 @@ THEN
         SetGlobal("K3DEBT","GLOBAL",2)
         ActionOverride("K3KHAE",StartDialogueNoSet(Player1))
 END
+
+// Position 4425.2248
+// Position 4516.2249
+
+IF
+    NightmareModeOn()
+    Global("DEIDREIMPORT","GLOBAL",1)
+THEN
+RESPONSE #100
+    CreateCreature("K3KHAE",[4425.2248],0)
+    CreateCreature("K3KHAE",[4516.2249],0)
+END
