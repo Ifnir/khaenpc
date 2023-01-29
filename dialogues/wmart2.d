@@ -14,5 +14,5 @@ END
 
 CHAIN WMART2 XWALMART3
 ~What a gentleman, the man you'll be meeting is Tom Lee Homes.~
-DO ~SetGlobal("DEIDREIMPORT","GLOBAL",1)~ EXIT
+ EXIT
 

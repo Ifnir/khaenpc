@@ -32,16 +32,9 @@ Global("K3EBRIFQUEST","GLOBAL",3)
 Global("K3EBRIJOURNAL","GLOBAL",1)
 THEN
 RESPONSE #100
+EraseJournalEntry(@100)
 AddJournalEntry(@100,QUEST_DONE)
-END
-
-
-IF
-Global("K3Q1", "GLOBAL",1)
-Global("K3PAYBROR","GLOBAL",1)
-THEN
-RESPONSE #100
-AddJournalEntry(@0, QUEST_DONE)
+SetGlobal("K3EBRIJOURNAL","GLOBAL",2)
 END
 
 IF
