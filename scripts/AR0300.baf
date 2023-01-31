@@ -28,6 +28,18 @@ THEN
 RESPONSE #100
     CreateCreature("K3DEB1",[4425.2248],0)
     CreateCreature("K3DEB2",[4516.2249],0)
+    ActionOverride("K3DEB1",CreateItem("K3CRATE",0,0,0))
     SetGlobal("DEIDREIMPORT","Global",3)
     Continue()
+END
+
+IF
+    Global("VAMPATTACK","GLOBAL",1)
+THEN
+RESPONSE #100
+    CreateCreature("K3VAM1",[4148.2744],0)
+    CreateCreature("K3VAM2",[4112.2803],0)
+    SetGlobal("VAMPATTACK","GLOBAL",2)
+    ActionOverride("K3VAM1",MoveToPoint([4253.2475])) 
+    ActionOverride("K3VAM2",MoveToPoint([4352.2488])) 
 END

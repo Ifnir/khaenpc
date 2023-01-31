@@ -30,3 +30,8 @@ COPY ~KhaeNPC/items/K3EBHEAD.itm~ ~override/K3EBHEAD.itm~
 SAY NAME1 @8
 SAY NAME2 @8
 SAY DESC @9
+
+COPY ~KhaeNPC/items/K3CRATE.itm~ ~override/K3CRATE.itm~
+SAY NAME1 @10
+SAY NAME2 @10
+SAY DESC @11

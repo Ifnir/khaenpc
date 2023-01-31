@@ -21,6 +21,7 @@ SAY NAME1 @200
 SAY NAME2 @200
 WRITE_ASCII 0x280 ~K3DEB1~
 WRITE_ASCII 0x2cc ~K3DEB1~ #8
+WRITE_ASCII 0x260 ~K3DEB1~ #8
 
 COPY ~KhaeNPC/creatures/K3DEB2.cre~ ~override/K3DEB2.cre~
 SAY NAME1 @200
@@ -211,7 +212,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/dialogues/K3deb1.d~
 ~KhaeNPC/dialogues/WMART2.d~ 
 ~KhaeNPC/scripts/K3bror.baf~  
-~KhaeNPC/scripts/K3gu01.baf~  
+~KhaeNPC/scripts/K3gu01.baf~
+~KhaeNPC/scripts/K3deb1.baf~  
 
 // Tob
 
