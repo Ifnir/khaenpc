@@ -50,3 +50,7 @@ CHAIN K3GERV QUEST2.2
 Her men is continous getting high-jacked and in some instances killed. I need you to go talk to her and resolve this matter, it might let us closer to any clue to who is the traitor among us.~
 DO ~SetGlobal("K3GERVQUEST","GLOBAL",3) SetGlobal("DEIDREIMPORT","GLOBAL",1)~ EXIT
 
+CHAIN IF ~~ THEN K3GERV QUEST3
+~You're back, what did you learn.~
+EXIT
+

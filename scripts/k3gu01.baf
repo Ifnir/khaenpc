@@ -9,3 +9,24 @@ THEN
         SetGlobal("K3BRORWAITING","GLOBAL",1)
 		StartDialogueNoSet([PC])
 END
+
+
+IF
+    Global("KILLCOUPLE","K3AR01",2)
+    AreaCheck("K3AR01")
+	NearLocation(Player1,2491,2204,20)
+	See(Player1)
+THEN
+RESPONSE #100
+	SetGlobal("KILLCOUPLE","K3AR01",3)
+	CreateItem("K3HEAD",0,0,0)
+	StartDialogueNoSet([PC])
+END
+
+IF 
+    Global("KILLCOUPLE","K3AR01",4)
+THEN
+RESPONSE #100
+    Enemy()
+    ActionOverride("K3DEB1",Enemy())
+END

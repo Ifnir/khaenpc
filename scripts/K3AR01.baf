@@ -29,3 +29,14 @@ RESPONSE #100
     CreateCreature("K3ebri",[2805.1380],0)
     SetGlobal("HelpEbrif","GLOBAL",1)
 END
+
+IF
+    Global("KILLCOUPLE","K3AR01",1)
+    AreaCheck("K3AR01")
+THEN
+RESPONSE #100
+    CreateCreature("K3DEB1",[2466.2167],0)
+    CreateCreature("K3GU01",[2526.2170],0)
+    SetGlobal("KILLCOUPLE","K3AR01",2)
+    Continue()
+END

@@ -97,3 +97,9 @@ SetGlobal("TALKTOGERV2","GLOBAL",1)
 SetGlobal("K3EBRIFQUEST","GLOBAL",3)
 ActionOverride("K3EBRI",Polymorph(SHADOW_THIEF))
 ActionOverride("K3EBRI",EscapeAreaObject("Tran5007a")) ~ EXIT
+
+CHAIN IF ~Global("KILLCOUPLE","K3AR01",4) PartyHasItem("K3HEAD")~ THEN K3EBRI COUPLEDEAD1
+~Is it done?~
+END
+++ ~Yes~ EXTERN K3EBRI DISG.4.4
+
