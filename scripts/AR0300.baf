@@ -22,7 +22,8 @@ END
 // Position 4516.2249
 
 IF
-    Time(1)
+    TimeLT(DAWN_START)
+    TimeGT(DUSK_START)
     Global("DEIDREIMPORT","GLOBAL",2)
 THEN
 RESPONSE #100

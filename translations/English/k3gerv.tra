@@ -1,9 +1,9 @@
-@301 = ~Ahh a newbie, I haven't seen you before. Where's my manner, it's rare to make new acquaintes. Allow me to introduce myself, I'm Gervel and the one next to me is Xavnan.~
+@301 = ~Ahh, a new face! It's not often that I have the pleasure of meeting someone new. Allow me to properly introduce myself. I am Gervel, and the charming individual standing beside me is Xavnan. It's a pleasure to make your acquaintance!~
 @302 = ~Aye, it's true. There have been some discrepancies in our accounts and some shipments have gone missing. I suspect that someone within our organization is responsible.~
-@303 = ~I have my suspicions as well. I believe it's someone who is close to us, someone who has access to our operations and knowledge of our routes.~ // Xavnan
-@304 = ~I cannot say for certain. I will be conducting an investigation and will take action when I have more information.~
-@305 = ~We had a prison outbreak recently and Zhal could use some help to locate the missing prisoner.~
-@306 = ~I don't believe Zhal to be the traitor, I'm not in the friendlies term with him, he's not the kind that likes to talk. However, if you help him, then you can gain his trust, and maybe he'll reveal something useful to you.~
+@303 = ~I firmly believe that the culprit behind these recent disturbances is someone who is intimately familiar with our operations, someone who has been privy to our inner workings and has gained a comprehensive understanding of our routes. This individual has a proximity to us that can not be ignored and it's imperative that we uncover their identity before they cause any more damage.~ // Tomlee
+@304 = ~Ahh, my comrade, I'm afraid I can't give you a definite answer just yet. You see, I must conduct a proper investigation before any actions can be taken. But don't you worry, as soon as I have more information at my disposal, I'll take swift and decisive action.~
+@305 = ~Comrade, I must say, we've had quite the predicament on our hands. A prison outbreak, can you believe it? And Zhal, poor orc, is having a devil of a time trying to track down the missing prisoner. I do hope you'll be able to lend him a hand in this matter. Every little bit helps, you know.~
+@306 = ~Well, let me tell you about Zhal. I can't say for certain that he's the one responsible for any treachery, but I must admit, our relationship is not exactly what you would call friendly. Zhal is a man of few words, you see. But if you're willing to lend him a helping hand, who knows? You might just earn his trust and perhaps, he'll share some valuable information with you.~
 
 @311 = ~Gervel, I'm <CHARNAME>. Bror has asked me to help investigate some internal issue.~
 @312 = ~What leads do you have so far?~
