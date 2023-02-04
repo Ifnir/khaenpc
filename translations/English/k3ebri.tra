@@ -34,7 +34,7 @@
 
 // create item to disguise Ebrif as shadow thief, use deb1 model. 
 
-@110 = ~Yes. You got it, thank godness. Alright, I found out someone that resemble me a lot, maybe his head could fool the orc to think you killed me.~
+@110 = ~Understood. I am relieved to hear that. I have discovered someone who bears a strong resemblance to myself. It is possible that using this person's head as evidence could deceive the orc into believing that you have carried out my demise.~
 
 @901 = ~That's good, where do I find him?~
 
@@ -48,9 +48,9 @@
 
 @113 = ~Yeah.. maybe there's another way, but it's entirely up to you.~
 
-@904 = ~Naaah, to much of a hazzle, I promise, to help you escape and it's not like I'm killing good people.~
+@904 = ~No, that sounds like too much trouble. I assure you that I am committed to helping you escape, and killing people commited to the shadow thieves does not bother me.~
 @905 = ~Sucks to be them.~
-@906 = ~I guess, I've to find another way, I'm not a savage.~
+@906 = ~I suppose I will have to seek alternative means. I refuse to resort to violent and ruthless murder.~
 
 @114 = ~Ok.. I appreciate your help, nonetheless. I'll be waiting here.~
 @115 = ~Ok, I don't how I can be to any help, although I do have information, I did eavesdrop when I was in their prisoner.~
