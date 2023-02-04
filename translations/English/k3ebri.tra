@@ -1,36 +1,36 @@
-@101 = ~Don't get close, who are you working for?~
+@101 = ~I implore you to maintain a safe distance, as I must inquire as to your identity. I have no desire to jeopardize my own safety.~
 
-@201 = ~Zhal requested me to look for someone, you shouldn't by any chance be, Ebrif?~
-@301 = ~No one particular, Khae is on the way to pay off his debt to the shadow thieves.~
-@401 = ~Take it easy, I'm working for no one, who are you hiding from?~
+@201 = ~I was tasked by Zhal to search for an individual, and I couldn't help but wonder if, by any chance, you might be the person I seek - Ebrif?~
+@301 = ~I am not searching for a specific person, rather I am here to observe Khae as he travels to fulfill his obligation to repay the Shadow Thieves.~
+@401 = ~Please, calm yourself. I assure you that I am not in the employ of any particular faction or individual. Might I inquire as to who it is that you fear and seek to avoid?~
 
-@102 = ~No, I don't want to go back, I rather die!~
-@103 = ~I don't believe you, the shadow thieves wouldn't let any roam free on their territory.~
-@104 = ~None of your business, you properly working for the shadow thieves. Kill me now, you're not getting me alive.~
+@102 = ~Please, I beg of you, do not make me go back to that place. The fear for my life is palpable and the thought of returning there fills me with dread. If it means sparing myself from that fate, I would rather face death head-on.~
+@103 = ~I am skeptical of your claims, as the notorious Shadow Thieves are known for their tight control over their territory. The thought of anyone being able to roam freely within their domain seems implausible to me.~
+@104 = ~I must respectfully decline to answer your query, as it is not relevant to you. Your association with the Shadow Thieves leads me to believe that you are here to do their bidding. If that is the case, I would rather face death by your hand than be taken captive by them.~
 
-@202 = ~I don't care, say your last prayer.~
-@203 = ~Well, we're working for them, that said, we woudln't do anything that goes against our moral compass.~
+@202 = ~My apathy towards your predicament is evident. You would do well to prepare yourself, as it may be prudent to offer up your final prayer.~
+@203 = ~Indeed, we are in the employ of the Shadow Thieves, however, it should be noted that we operate within the bounds of our personal moral code. We would not engage in actions that conflict with our ethical principles.~
 
-@105 = ~Oh, That's a relief, I was worried this was going to be my final moment. I'm Ebrif, as you might pressume, what's your name?~
+@105 = ~I am overjoyed to hear that my initial apprehensions were unfounded. For a moment, I feared that this would be the end of my journey. Allow me to introduce myself, I am Ebrif. And if I may be so bold, may I ask for the pleasure of knowing your name?~
 
-@501 = ~I'm <CHARNAME>, may I ask how you end up here?~
+@501 = ~I'm <CHARNAME>, If I may be so bold, would you be willing to share with me the circumstances that led to your presence here?~
 
-@106 = ~I was in love with a women, she was younger than me, and I assume her father is the reason the shadow thieves kidnapped me. You see, she comes from a wealthy family, and I'm a simple peasant.~
+@106 = ~Allow me to share my story with you. I was deeply enamored with a young woman. I believe that her father, from a wealthy family, is the reason I was taken captive by the Shadow Thieves. As a mere peasant, I was an unworthy suitor in his eyes.~
 
-@601 = ~I'm about to cry, wah, wah. I hope, you're not fooling yourself with this ridiculous romance. I bet, she's only with you to annoy her father.~
-@602 = ~How awful, unfortunately, the shadow thieves are looking for you, and they tasked me to return you.~
+@601 = ~I am filled with sorrow for your situation. Please forgive my emotional state. However, I must admit, I cannot help but question the authenticity of your romantic feelings. It is possible that the young woman is only using your affections to irk her father, rather than any genuine emotional connection.~
+@602 = ~What a tragic turn of events. Regrettably, the Shadow Thieves have expressed an interest in your capture and have assigned me the task of bringing you back to them.~
 
-@107 = ~Help me escape, I'll do anything for it.~
-@1071 = ~So what! I don't care about your opinion, you ask for my story, and then you ridicule me. you might as well just slay me now, if you don't have any intention of helping me.~
-@7071 = ~Easy big guy, we're not going to slay you.~
+@107 = ~Please, I implore you, assist me in my escape. I am willing to undertake any measures necessary to achieve this.~
+@1071 = ~I am indifferent to your thoughts on my situation. You requested to hear my story, yet you chose to mock me. If your intent is not to assist me in any way, it would be a mercy to bring an end to my struggles now.~
+@7071 = ~Please, take it easy. There is no need to be alarmed, I assure you that we have no intention of causing you harm.~
 
-@701 = ~We could help you escape, but it has to be through the exit, maybe a disguise.~
+@701 = ~We have the means to aid in your escape, however, it must be done discreetly, possibly through the use of an disguise or exiting the area in a covert manner.~
 
-@108 = ~That's a great idea, do you know where we could find a uniform.~
+@108 = ~That's a great idea, do you have any knowledge of where we may acquire a uniform to aid in our disguise?.~
 
-@801 = ~I've look into it, however, meanwhile I will ask you to find something I can use to prove I killed you.~
+@801 = ~I've look into it, however, I must request your assistance in procuring something that I can use as evidence of your death.~
 
-@109 = ~I'll do that, thank you for your help, you don't know how much this means for me.~
+@109 = ~I will do my best to fulfill this request. I am grateful for your assistance, and I cannot express how much this means to me.~
 
 // create item to disguise Ebrif as shadow thief, use deb1 model. 
 
