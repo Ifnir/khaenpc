@@ -18,7 +18,7 @@ END
 
 CHAIN K3VERD VPLANGO
 ~Excellent, now go away and do my bidding.~
-DO ~Global("K3WIZARD","GLOBAL",2)~ EXIT
+DO ~SetGlobal("K3WIZARD","GLOBAL",2)~ EXIT
 
 CHAIN K3VERD VPLANQ1
 ~I don't have time to do everything, I've other inquiries, that need my attention.~ EXTERN K3VERD VPLAN
