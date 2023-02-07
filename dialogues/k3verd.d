@@ -10,7 +10,7 @@ END
 ++ ~Is that so, well, I suppose you oughta know.~ EXTERN K3VERD VPLAN
 
 CHAIN K3VERD VPLAN
-~At the graveyard, find the the tomb to the southeast. In there is a face made of clay facing toward you. You will cycle these instruction, I've yet to decipher them, so that will be up to you.~
+~At the graveyard, find the the tomb to the south. In there is a face made of clay facing toward you. You will cycle these instruction, I've yet to decipher them, so that will be up to you.~
 END
 ++ ~Why haven't you deciphered the instruction yourself?~ EXTERN K3VERD VPLANQ1
 ++ ~What we're up against?~ EXTERN K3VERD VPLANQ2
