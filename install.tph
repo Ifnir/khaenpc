@@ -210,6 +210,7 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/dialogues/K3gerv.d~  
 ~KhaeNPC/dialogues/K3zhal.d~  
 ~KhaeNPC/dialogues/K3deb1.d~
+~KhaeNPC/dialogues/K3verd.d~
 ~KhaeNPC/dialogues/WMART2.d~ 
 ~KhaeNPC/scripts/K3bror.baf~  
 ~KhaeNPC/scripts/K3gu01.baf~
