@@ -44,3 +44,5 @@ CHAIN K3VERD VPLANQ2
 // 
 // You can either accept to help him remove him, or fight him.
 // Before you give him the lich item, you can go to gervel, he will have you go to Ula, she will look and tell you the truth.
+
+// Create item book as quest item. Make ChatGPT do the quest.
