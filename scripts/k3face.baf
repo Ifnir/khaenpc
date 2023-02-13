@@ -14,8 +14,8 @@ IF
 	Global("K3FaceOne","AR0810",1)  
 THEN
 	RESPONSE #100
-		ActionOverride("ppstat01",Wait(1))
-		ActionOverride("ppstat01",StartDialogueNoSet([PC]))
+		ActionOverride("k3state",Wait(1))
+		ActionOverride("k3state",StartDialogueNoSet([PC]))
 		TriggerActivation("Face1",FALSE)
 END
 

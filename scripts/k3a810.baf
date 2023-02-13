@@ -1,0 +1,15 @@
+IF
+	Global("FaceOn","AR0810",1) 
+THEN
+	RESPONSE #100
+		TriggerActivation("K3Face1",TRUE)
+		SetGlobal("FaceOn","AR0810",0) 
+END
+
+IF
+	Global("FaceOn","AR0810",2) 
+THEN
+	RESPONSE #100
+		TriggerActivation("K3Face1",FALSE)
+		SetGlobal("FaceOn","AR0810",0)  
+END
