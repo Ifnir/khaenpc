@@ -1,0 +1,37 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("K3FaceOne","",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~Recite the book~)  
+		SetGlobal("K3FaceOne","AR0810",1)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("K3FaceOne","AR0810",1)  
+THEN
+	RESPONSE #100
+		ActionOverride("ppstat01",Wait(1))
+		ActionOverride("ppstat01",StartDialogueNoSet([PC]))
+		TriggerActivation("Face1",FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	Global("K3FaceOne","AR0810",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,31864) 
+		TriggerActivation("K3Face1",FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // You are too far away to use that.
+END

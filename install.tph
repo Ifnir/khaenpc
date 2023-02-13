@@ -139,6 +139,13 @@ SAY NAME2 @211
 WRITE_ASCII 0x280 ~K3VAM2~
 WRITE_ASCII 0x2cc ~K3VAM2~ #8
 
+COPY ~KhaeNPC/creatures/K3STATE.cre~ ~override/K3STATE.cre~
+SAY NAME1 @211
+SAY NAME2 @211
+WRITE_ASCII 0x280 ~K3STATE~
+WRITE_ASCII 0x2cc ~K3FACE~ #8
+
+
 // Soa
 
 COPY ~KhaeNPC/creatures/K3Khae.cre~ ~override/K3Khae.cre~
@@ -214,7 +221,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/dialogues/WMART2.d~ 
 ~KhaeNPC/scripts/K3bror.baf~  
 ~KhaeNPC/scripts/K3gu01.baf~
-~KhaeNPC/scripts/K3deb1.baf~  
+~KhaeNPC/scripts/K3deb1.baf~
+~KhaeNPC/dialogues/k3face.d~   
 
 // Tob
 
@@ -322,7 +330,7 @@ COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
       WRITE_ASCII 0x94 ~AR0500~ #8 
 
 COPY_EXISTING ~K3A810.are~ ~override/AR0810.are~
-      WRITE_ASCII 0x94 ~AR0810~ #8 
+      WRITE_ASCII 0x94 ~K3A810~ #8 
 
 // JOURNALS AND SETUP
 
@@ -364,6 +372,8 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3AR03.baf~
 ~KhaeNPC/scripts/K3AR04.baf~
 ~KhaeNPC/scripts/K3AR05.baf~
+~KhaeNPC/scripts/K3A810.baf~
+~KhaeNPC/scripts/K3face.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~

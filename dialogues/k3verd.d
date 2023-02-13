@@ -16,9 +16,9 @@ END
 ++ ~What we're up against?~ EXTERN K3VERD VPLANQ2
 ++ ~Affirmative.~ EXTERN K3VERD VPLANGO
 
-CHAIN K3VERD VPLANGO
+CHAIN IF ~HasItem("K3BOOK1")~ THEN K3VERD VPLANGO
 ~Excellent, now go away and do my bidding.~
-DO ~SetGlobal("K3WIZARD","GLOBAL",2)~ EXIT
+DO ~SetGlobal("K3WIZARD","GLOBAL",2) GiveItem("K3BOOK1",Player1)~ EXIT
 
 CHAIN K3VERD VPLANQ1
 ~I don't have time to do everything, I've other inquiries, that need my attention.~ EXTERN K3VERD VPLAN
