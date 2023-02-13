@@ -1,31 +1,40 @@
 IF
-	Clicked([ANYONE])
-	Range(LastTrigger,10)
-	Global("K3FaceOne","",0)
+	Global("K3FaceSTATE","GLOBAL",0)
 THEN
 	RESPONSE #100
-		DisplayString(Myself,~Recite the book~)  
-		SetGlobal("K3FaceOne","AR0810",1)  
+	CreateCreature("K3STATE",[708.449],0)
+	SetGlobal("K3FaceSTATE","GLOBAL",1)
+	SetGlobal("FaceOn","GLOBAL",2) 
 END
 
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,10)
-	Global("K3FaceOne","AR0810",1)  
+	Global("K3FaceOne","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~Recite the book~)  
+		SetGlobal("K3FaceOne","GLOBAL",1)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("K3FaceOne","GLOBAL",1)  
 THEN
 	RESPONSE #100
 		ActionOverride("k3state",Wait(1))
 		ActionOverride("k3state",StartDialogueNoSet([PC]))
-		TriggerActivation("Face1",FALSE)
+		TriggerActivation("Face",FALSE)
 END
 
 IF
 	Clicked([ANYONE])
-	Global("K3FaceOne","AR0810",2)
+	Global("K3FaceOne","GLOBAL",2)
 THEN
 	RESPONSE #100
 		DisplayString(Myself,31864) 
-		TriggerActivation("K3Face1",FALSE)
+		TriggerActivation("Face",FALSE)
 END
 
 IF
