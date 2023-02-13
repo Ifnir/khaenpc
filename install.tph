@@ -143,7 +143,7 @@ COPY ~KhaeNPC/creatures/K3STATE.cre~ ~override/K3STATE.cre~
 SAY NAME1 @212
 SAY NAME2 @212
 WRITE_ASCII 0x280 ~K3STATE~
-WRITE_ASCII 0x2cc ~K3FACE~ #8
+WRITE_ASCII 0x2cc ~K3STATE~ #8
 
 
 // Soa
@@ -222,7 +222,7 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/scripts/K3bror.baf~  
 ~KhaeNPC/scripts/K3gu01.baf~
 ~KhaeNPC/scripts/K3deb1.baf~
-~KhaeNPC/dialogues/k3face.d~   
+~KhaeNPC/dialogues/k3state.d~   
 
 // Tob
 
