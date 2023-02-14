@@ -1,0 +1,9 @@
+IF
+	Global("FaceOne","AR0810",1)
+    Global("StateTalk","AR0810",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+        SetGlobal("StateTalk","AR0810",1)
+END

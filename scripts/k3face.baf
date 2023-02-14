@@ -1,40 +1,34 @@
 IF
-	Global("K3FaceSTATE","GLOBAL",0)
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("FaceOne","AR0810",0) 
 THEN
 	RESPONSE #100
-	CreateCreature("K3STATE",[708.449],0)
-	SetGlobal("K3FaceSTATE","GLOBAL",1)
-	SetGlobal("FaceOn","GLOBAL",2) 
+		DisplayString(Myself,~You take the book and recipe~)  
+		SetGlobal("FaceOne","AR0810",1)  
 END
 
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,10)
-	Global("K3FaceOne","GLOBAL",0)
+	Global("FaceOne","AR0810",1)
 THEN
 	RESPONSE #100
-		DisplayString(Myself,~Recite the book~)  
-		SetGlobal("K3FaceOne","GLOBAL",1)  
+		CreateVisualEffectObject("SPFLESHS",LastTrigger)
+		PlaySound("EFF_M63")
+		SmallWait(7)
+		CreateVisualEffect("SPFLESHS",[1268.544])
+		CreateCreature("K3STATE",[1268.544],0)
+		TriggerActivation("k3faceonwall",FALSE)
 END
 
 IF
 	Clicked([ANYONE])
-	Range(LastTrigger,10)
-	Global("K3FaceOne","GLOBAL",1)  
+	Global("FaceOne","AR0810",2)  // Bodhi's Hunt Level 1
 THEN
 	RESPONSE #100
-		ActionOverride("k3state",Wait(1))
-		ActionOverride("k3state",StartDialogueNoSet([PC]))
-		TriggerActivation("Face",FALSE)
-END
-
-IF
-	Clicked([ANYONE])
-	Global("K3FaceOne","GLOBAL",2)
-THEN
-	RESPONSE #100
-		DisplayString(Myself,31864) 
-		TriggerActivation("Face",FALSE)
+		DisplayString(Myself,31864)  // Its riddle completed, the face speaks no more.
+		TriggerActivation("k3faceonwall",FALSE)
 END
 
 IF

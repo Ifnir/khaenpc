@@ -1,15 +1,15 @@
 IF
-	Global("FaceOn","GLOBAL",1) 
+	Global("FaceOn","AR0810",1)  // Bodhi's Hunt Level 1
 THEN
 	RESPONSE #100
-		TriggerActivation("Face",TRUE)
-		SetGlobal("FaceOn","AR0810",0) 
+		TriggerActivation("k3faceonwall",TRUE)
+		SetGlobal("FaceOn","AR0810",0)  // Bodhi's Hunt Level 1
 END
 
 IF
-	Global("FaceOn","GLOBAL",2) 
+	Global("FaceOn","AR0810",2)  // Bodhi's Hunt Level 1
 THEN
 	RESPONSE #100
-		TriggerActivation("Face",FALSE)
-		SetGlobal("FaceOn","AR0810",0)  
+		TriggerActivation("k3faceonwall",FALSE)
+		SetGlobal("FaceOn","AR0810",0)  // Bodhi's Hunt Level 1
 END

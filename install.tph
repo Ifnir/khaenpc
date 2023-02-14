@@ -144,6 +144,7 @@ SAY NAME1 @212
 SAY NAME2 @212
 WRITE_ASCII 0x280 ~K3STATE~
 WRITE_ASCII 0x2cc ~K3STATE~ #8
+WRITE_ASCII 0x260 ~K3STATE~ #8
 
 
 // Soa
@@ -222,8 +223,8 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/scripts/K3bror.baf~  
 ~KhaeNPC/scripts/K3gu01.baf~
 ~KhaeNPC/scripts/K3deb1.baf~
-~KhaeNPC/dialogues/k3state.d~   
-
+~KhaeNPC/dialogues/k3state.d~ 
+~KhaeNPC/scripts/K3STATE.baf~
 // Tob
 
 COPY ~KhaeNPC/creatures/K3Khae25.cre~ ~override/K3Khae25.cre~
@@ -331,6 +332,26 @@ COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
 
 COPY_EXISTING ~K3A810.are~ ~override/AR0810.are~
       WRITE_ASCII 0x94 ~K3A810~ #8 
+
+COPY_EXISTING ~AR0810.are~ ~override~
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type         = 1    //trigger
+    fj_box_left    = 597
+    fj_box_top     = 212
+    fj_box_right   = 620
+    fj_box_bottom  = 247
+    fj_cursor_idx   = 8
+    fj_vertex_0    = 597 + (190 << 16)
+    fj_vertex_1    = 620 + (212 << 16)
+    fj_vertex_2    = 615 + (262 << 16)
+    fj_vertex_3    = 598 + (247 << 16)
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = k3faceonwall
+    fj_reg_script   = k3face
+  END
+BUT_ONLY
 
 // JOURNALS AND SETUP
 
