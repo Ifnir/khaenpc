@@ -333,6 +333,16 @@ COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
 COPY_EXISTING ~K3A810.are~ ~override/AR0810.are~
       WRITE_ASCII 0x94 ~K3A810~ #8 
 
+COPY_EXISTING ~K3A3502.are~ ~override.are~
+
+COPY_EXISTING ~K3A3503.are~ ~override.are~
+
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+  COPY ~%MOD_FOLDER%/tis+pvrz~ ~override~
+ END ELSE BEGIN
+  //nothing
+END
+
 COPY_EXISTING ~AR0810.are~ ~override~
   LPF ~fj_are_structure~
     INT_VAR
