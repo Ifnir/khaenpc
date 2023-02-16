@@ -1,0 +1,32 @@
+IF
+    Global("AR3502","GLOBAL",0)
+THEN
+RESPONSE #100
+    // Start
+    CreateCreature("ZOMBJU01",[1371.1198],9)
+    CreateCreature("ZOMBJU01",[1474.1055],9)
+    CreateCreature("ZOMBJU01",[1313.1107],9)
+    CreateCreature("WRAITH01",[1052.1031],9)
+    CreateCreature("WRAITH01",[1144.902],9)
+
+    // North Corridor
+    CreateCreature("ZOMBJU01",[2093.475],9)
+    CreateCreature("ZOMBJU01",[1888.400],9)
+    CreateCreature("WRAITH01",[1934.749],9)
+    CreateCreature("WRAITH01",[1714.636],9)
+
+    // South Corridor
+    CreateCreature("ZOMBJU01",[980.1546],9)
+    CreateCreature("WRAITH01",[1234.1694],9)
+    CreateCreature("WRAITH01",[633.1740],9)
+
+    // Entrance
+    CreateCreature("WRAITH01",[580.679],9)
+    CreateCreature("WRAITH01",[547.597],9)
+    CreateCreature("WRAITH01",[363.827],9)
+
+    // North East Room
+    CreateCreature("LICH01",[1169.226],9)
+
+    SetGlobal("AR3502","GLOBAL",1)
+END

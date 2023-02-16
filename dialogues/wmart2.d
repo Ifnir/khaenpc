@@ -1,5 +1,5 @@
 EXTEND_TOP WMART2 1 
-+~Global("K3GERVQUEST","GLOBAL",3) Global("DEIDREIMPORT","GLOBAL",1)~+ ~We are from the shadow thieves, w're come to help.~ EXTERN WMART2 XWALMART1 
++~Global("K3GERVQUEST","GLOBAL",3) Global("DEIDREIMPORT","GLOBAL",1)~+ ~We are from the shadow thieves, we're here to help.~ EXTERN WMART2 XWALMART1 
 END 
 
 CHAIN WMART2 XWALMART1 

@@ -146,6 +146,12 @@ WRITE_ASCII 0x280 ~K3STATE~
 WRITE_ASCII 0x2cc ~K3STATE~ #8
 WRITE_ASCII 0x260 ~K3STATE~ #8
 
+COPY ~KhaeNPC/creatures/K3MEPS.cre~ ~override/K3MEPS.cre~
+SAY NAME1 @213
+SAY NAME2 @213
+WRITE_ASCII 0x280 ~K3MEPS~
+WRITE_ASCII 0x2cc ~K3MEPS~ #8
+WRITE_ASCII 0x260 ~K3MEPS~ #8
 
 // Soa
 
@@ -220,11 +226,14 @@ COMPILE EVALUATE_BUFFER ~KhaeNPC/dialogues/K3Khae.d~ // Dialogue Join
 ~KhaeNPC/dialogues/K3deb1.d~
 ~KhaeNPC/dialogues/K3verd.d~
 ~KhaeNPC/dialogues/WMART2.d~ 
-~KhaeNPC/scripts/K3bror.baf~  
+~KhaeNPC/scripts/K3bror.baf~
 ~KhaeNPC/scripts/K3gu01.baf~
 ~KhaeNPC/scripts/K3deb1.baf~
 ~KhaeNPC/dialogues/k3state.d~ 
 ~KhaeNPC/scripts/K3STATE.baf~
+~KhaeNPC/dialogues/k3meps.d~ 
+~KhaeNPC/scripts/k3meps.baf~
+
 // Tob
 
 COPY ~KhaeNPC/creatures/K3Khae25.cre~ ~override/K3Khae25.cre~
@@ -333,9 +342,12 @@ COPY_EXISTING ~K3A500.are~ ~override/AR0500.are~
 COPY_EXISTING ~K3A810.are~ ~override/AR0810.are~
       WRITE_ASCII 0x94 ~K3A810~ #8 
 
-COPY_EXISTING ~K3A3502.are~ ~override.are~
+COPY_EXISTING ~K3A3502.are~ ~override/K3A3502.are~
 
-COPY_EXISTING ~K3A3503.are~ ~override.are~
+COPY_EXISTING ~K3A3503.are~ ~override/K3A3503.are~
+      WRITE_ASCII 0x94 ~K3A3503~ #8
+
+COPY ~%MOD_FOLDER%/bams-anim~ ~override~
 
 ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
   COPY ~%MOD_FOLDER%/tis+pvrz~ ~override~
@@ -405,6 +417,8 @@ COMPILE	EVALUATE_BUFFER ~KhaeNPC/scripts/K3CUT01.baf~
 ~KhaeNPC/scripts/K3AR05.baf~
 ~KhaeNPC/scripts/K3A810.baf~
 ~KhaeNPC/scripts/K3face.baf~
+~KhaeNPC/scripts/K3A3502.baf~
+~KhaeNPC/scripts/K3A3503.baf~
 
 EXTEND_TOP ~AR0300.bcs~ 		~KhaeNPC/scripts/AR0300.baf~
 EXTEND_TOP ~AR0004.bcs~     ~KhaeNPC/scripts/AR0004.baf~

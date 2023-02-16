@@ -1,0 +1,7 @@
+IF
+    Global("AR3503","GLOBAL",0)
+THEN
+RESPONSE #100
+    CreateCreature("k3meps",[413.553],9)
+    SetGlobal("AR3503","GLOBAL",1)
+END
