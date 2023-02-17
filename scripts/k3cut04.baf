@@ -1,0 +1,14 @@
+IF
+    Global("K3MEPSCAST","GLOBAL",0)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)	
+        FadeFromColor([30.0],0)
+        Wait(2)
+        ActionOverride("K3MEPS",ForceSpellPoint([480.794],ClERIC_GATE))
+        Wait(3)
+        ActionOverride("K3MEPS",ForceSpellPoint([697.395],ClERIC_GATE))
+        Wait(10)
+        EndCutSceneMode()
+        SetGlobal("K3MEPSCAST","GLOBAL",1)
+END
