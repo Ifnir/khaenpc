@@ -46,3 +46,23 @@ CHAIN K3VERD VPLANQ2
 // Before you give him the lich item, you can go to gervel, he will have you go to Ula, she will look and tell you the truth.
 
 // Create item book as quest item. Make ChatGPT do the quest.
+
+CHAIN IF ~PartyHasItem("k3figur")~ THEN K3VERD FIGUR
+~<CHARNAME>! I see, you done well, I 've a great reward for you, now hang it over to me.~
+END
+++ ~You're strangely eager to get the figur, what's your plan with it?~ EXTERN K3VERD FIGUR1
+++ ~Who's included in this scheme?~ EXTERN K3VERD FIGUR2
+++ ~*Give the figur*~ EXTERN K3VERD FIGUR3
+
+CHAIN K3VERD FIGUR1
+~It's part of plan to turn the tides, it will gain us the advantage against our enemies.~ 
+EXTERN K3VERD FIGUR
+
+CHAIN K3VERD FIGUR2
+~Our great leader, Bror. I've personally kept him informed.~ 
+EXTERN K3VERD FIGUR
+
+// Create a item
+CHAIN K3VERD FIGUR2
+~Good, here's your reward. I greatly appreciate your effort to obtain this artifact.~ 
+DO ~ GiveGoldForce(4000)~ EXIT

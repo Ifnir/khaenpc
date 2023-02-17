@@ -45,6 +45,7 @@ CHAIN K3MEPS 8
 ~You are not in position to say anything!~
 == K3MEPS ~No matter, I'm done with you. You'll get what you want, but be wary.~
 DO ~
+GiveItemCreate("k3figur",Player1,1,0,0)
 ActionOverride(Player1,LeaveAreaLUA("ar0810","",[562.354],4))
 ActionOverride(Player2,LeaveAreaLUA("ar0810","",[562.354],4))
 ActionOverride(Player3,LeaveAreaLUA("ar0810","",[562.354],4))

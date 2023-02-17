@@ -40,3 +40,8 @@ COPY ~KhaeNPC/items/K3BOOK1.itm~ ~override/K3BOOK1.itm~
 SAY NAME1 @12
 SAY NAME2 @12
 SAY DESC @13
+
+COPY ~KhaeNPC/items/K3FIGUR.itm~ ~override/K3FIGUR.itm~
+SAY NAME1 @14
+SAY NAME2 @14
+SAY DESC @15
