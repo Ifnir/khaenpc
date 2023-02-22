@@ -19,12 +19,12 @@ THEN
 		SmallWait(7)
 		CreateVisualEffect("SPFLESHS",[1268.544])
 		CreateCreature("K3STATE",[1268.544],0)
-		TriggerActivation("k3faceonwall",FALSE)
+		ClearAllActions() 
 END
 
 IF
 	Clicked([ANYONE])
-	Global("FaceOne","AR0810",2)  // Bodhi's Hunt Level 1
+	Global("FaceOne","AR0810",2)  
 THEN
 	RESPONSE #100
 		DisplayString(Myself,31864)  // Its riddle completed, the face speaks no more.

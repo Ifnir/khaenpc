@@ -47,7 +47,7 @@ CHAIN K3VERD VPLANQ2
 
 // Create item book as quest item. Make ChatGPT do the quest.
 
-CHAIN IF ~PartyHasItem("k3figur")~ THEN K3VERD FIGUR
+CHAIN IF ~PartyHasItem("k3figur") Global("K3WIZARD","GLOBAL",2)~ THEN K3VERD FIGUR
 ~<CHARNAME>! I see, you done well, I 've a great reward for you, now hang it over to me.~
 END
 ++ ~You're strangely eager to get the figur, what's your plan with it?~ EXTERN K3VERD FIGUR1
@@ -63,6 +63,6 @@ CHAIN K3VERD FIGUR2
 EXTERN K3VERD FIGUR
 
 // Create a item
-CHAIN K3VERD FIGUR2
+CHAIN K3VERD FIGUR3
 ~Good, here's your reward. I greatly appreciate your effort to obtain this artifact.~ 
-DO ~ GiveGoldForce(4000)~ EXIT
+DO ~ GiveGoldForce(4000) TakePartyItem("K3figur") SetGlobal("K3WIZARD","GLOBAL",3)~ EXIT

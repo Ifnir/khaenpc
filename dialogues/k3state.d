@@ -33,6 +33,7 @@ CHAIN K3STATE CORRECT3
 END
 ++ ~Step forward.~
 DO ~
+SetGlobal("FaceOne","AR0810",2)
 ActionOverride(Player1,LeaveAreaLUA("k3a3502","",[1860.1259],4))
 ActionOverride(Player2,LeaveAreaLUA("k3a3502","",[1854.1294],4))
 ActionOverride(Player3,LeaveAreaLUA("k3a3502","",[1965.1333],4))
@@ -45,5 +46,10 @@ ActionOverride(Player6,LeaveAreaLUA("k3a3502","",[1923.1163],4))~ EXIT
 
 
 CHAIN K3STATE WRONG
-~You failed to follow the passage in the book and shallmow be punished~
-DO ~CreateCreature("ZOMBJU01",[368.350],0) CreateCreature("ZOMBJU01",[564.491],0)~ EXIT
+~You failed to follow the passage in the book and shall now be punished~
+DO ~CreateCreature("ZOMBJU01",[368.350],0)
+CreateCreature("ZOMBJU01",[564.491],0)
+SetGlobal("FaceOne","AR0810",0)
+SetGlobal("StateTalk","AR0810",0)
+TriggerActivation("k3faceonwall",TRUE)
+DestroySelf()~ EXIT

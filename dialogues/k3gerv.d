@@ -60,3 +60,17 @@ CHAIN K3XAV K3XAV1
 == K3GERV ~It's unfortunate, more and more is leaving the shadow thieves in fear, and converting to those beasts. Go to our wizard, he knows what we've to do.~
 DO ~SetGlobal("K3WIZARD","GLOBAL",1)~ EXIT
 
+CHAIN IF ~Global("K3WIZARD","GLOBAL",3)~ THEN K3GERV Q4
+~I see,you returned comrade, and you helped our wizard with a solution with our problem. Could you tell me, do you have any clue to how our wizard do?~
+END
+++ ~He gave me a book and asked me to recipe it at one of the tomb at the graveyard. It teleported me to the realm of Mepsfo.~ EXTERN K3XAV1 Q4.1
+
+CHAIN K3XAV Q4.1
+~The realm of Mepsfo, I've never heard of it before.~
+== K3GERV ~Me neither, this is worrisome, I had my suspicion about our wizard. Can you tell what you were required to get?~
+END
+++ ~I was told to get a figur, I've no idea what it does~ EXTERN K3GERV Q4.2
+
+CHAIN K3GERV Q4.2
+~Hmmm, we have a atypical expert we can ask about, go to our beautiful chief, Ula. I believe with her smart wit, she could tell us who Mepsfo is.~
+DO ~SetGlobal("K3ULA","GLOBAL",1)~ EXIT
