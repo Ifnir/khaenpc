@@ -63,7 +63,7 @@ DO ~SetGlobal("K3WIZARD","GLOBAL",1)~ EXIT
 CHAIN IF ~Global("K3WIZARD","GLOBAL",3)~ THEN K3GERV Q4
 ~I see,you returned comrade, and you helped our wizard with a solution with our problem. Could you tell me, do you have any clue to how our wizard do?~
 END
-++ ~He gave me a book and asked me to recipe it at one of the tomb at the graveyard. It teleported me to the realm of Mepsfo.~ EXTERN K3XAV1 Q4.1
+++ ~He gave me a book and asked me to recipe it at one of the tomb at the graveyard. It teleported me to the realm of Mepsfo.~ EXTERN K3XAV Q4.1
 
 CHAIN K3XAV Q4.1
 ~The realm of Mepsfo, I've never heard of it before.~

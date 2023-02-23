@@ -11,4 +11,8 @@ END
 CHAIN K3ULA 2
 ~Did you just say Mepsfo, that's not good. If it's true, then Verdel might have made a deal to become a Lich.~
 == K3ULA ~We have to stop him immediately, we have to get to Gervel and stop Verdel, before it's to late.~
-DO ~~ EXIT
+DO ~FadeToColor([30.0],0)
+    Wait(1)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("K3CUT05")~ EXIT
